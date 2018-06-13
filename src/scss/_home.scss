@@ -1,19 +1,6 @@
 .wrap-overview {
-  .baseline-overview {
-    font-size: $size16;
-  }
-
+  .head-overview,
   .wrap-button {
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 2rem;
-
-    > * {
-      @include btn-primary();
-
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
-    }
+    display: none;
   }
 }
