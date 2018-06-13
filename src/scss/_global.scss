@@ -47,16 +47,16 @@ table {
 }
 
 // Fonts icomoon
-@font-face {
-  //font-family: 'icomoon';
-  //src:  url('../fonts/icomoon.eot?s5aglo');
-  //src:  url('../fonts/icomoon.eot?s5aglo#iefix') format('embedded-opentype'),
-  //url('../fonts/icomoon.ttf?s5aglo') format('truetype'),
-  //url('../fonts/icomoon.woff?s5aglo') format('woff'),
-  //url('../fonts/icomoon.svg?s5aglo#icomoon') format('svg');
-  //font-weight: normal;
-  //font-style: normal;
-}
+//@font-face {
+//  font-family: 'icomoon';
+//  src:  url('../fonts/icomoon.eot?s5aglo');
+//  src:  url('../fonts/icomoon.eot?s5aglo#iefix') format('embedded-opentype'),
+//  url('../fonts/icomoon.ttf?s5aglo') format('truetype'),
+//  url('../fonts/icomoon.woff?s5aglo') format('woff'),
+//  url('../fonts/icomoon.svg?s5aglo#icomoon') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -97,9 +97,9 @@ html {
   height: 100%;
 }
 
-//html {
-//  font-size: 62.5%;
-//}
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: $texte;
@@ -114,12 +114,12 @@ h4,
 h5,
 h6 {
   font-family: $title;
-  letter-spacing: .3rem;
+  letter-spacing: .1rem;
 }
 
 h1 {
-  font-size: $size60;
-  line-height: 7rem;
+  font-size: $size20;
+  line-height: 3rem;
 }
 
 a {
@@ -127,9 +127,17 @@ a {
   color: $blue;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 200rem;
-  padding: 2rem;
+  padding: 1.5rem;
+}
+
+.btn {
+  @include btn-primary();
 }
 
 .wrap-header {
@@ -210,7 +218,7 @@ a {
         content: '';
         width: 100%;
         height: 8px;
-        background-color: #FFF;
+        background-color: $blue;
         display: block;
         position: absolute;
         border-radius: 20px;
@@ -228,7 +236,7 @@ a {
       }
 
       .text {
-        color: #FFF;
+        color: $blue;
         display: block;
         position: absolute;
         bottom: 0;
@@ -279,7 +287,7 @@ a {
 
     .link-home {
       .img-logo {
-        max-width: 20rem;
+        width: 10rem;
       }
     }
 

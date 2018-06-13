@@ -16,56 +16,69 @@
 
             <div class="wrap-anchors">
                 <div class="anchor">
-                    <img src="https://picsum.photos/70/70" alt="" class="img-anchor">
+                    <img src="http://via.placeholder.com/45x45" alt="" class="img-anchor">
                     <div class="text-anchors">
                         <p class="title-anchor">Certification</p>
                         <a href="certification" class="btn btn-primary btn-md">Découvrir</a>
                     </div>
                 </div>
                 <div class="anchor">
-                    <img src="https://picsum.photos/90/90" alt="" class="img-anchor">
+                    <img src="http://via.placeholder.com/45x45" alt="" class="img-anchor">
                     <div class="text-anchors">
                         <p class="title-anchor">Formation</p>
                         <a href="formation" class="btn btn-primary btn-md">Découvrir</a>
                     </div>
                 </div>
                 <div class="anchor">
-                    <img src="https://picsum.photos/90/90" alt="" class="img-anchor">
+                    <img src="http://via.placeholder.com/45x45" alt="" class="img-anchor">
                     <div class="text-anchors">
                         <p class="title-anchor">Cheklists</p>
                         <a href="checklist" class="btn btn-primary btn-md">Découvrir</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="wrap-presentation">
+        <div class="container">
+            <div class="head-presentation">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <h3>Cras hendrerit tortor erat, non suscipit nunc pharetra sed.</h3>
+            </div>
+
+            <div class="content-presentation">
+                <h3 class="title-presentation">Iphone App</h3>
+                <h4 class="subtitle-presentation">Cras hendrerit tortor erat, non suscipit nunc.</h4>
+
+                <div class="wrap-features">
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h4 class="title-feature">Feature #1</h4>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h4 class="title-feature">Feature #2</h4>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h4 class="title-feature">Feature #3</h4>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-md">Contact</a>
             </div>
         </div>
     </section>
-    <section class="">
-        <div>
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <h3>Cras hendrerit tortor erat, non suscipit nunc pharetra sed.</h3>
-        </div>
-        <div>
-            <h3>Iphone App</h3>
-            <h4>Cras hendrerit tortor erat, non suscipit nunc.</h4>
-            <div>
-                <img src="https://picsum.photos/50/50" alt="">
-                <h4>Feature #1</h4>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="https://picsum.photos/50/50" alt="">
-                <h4>Feature #2</h4>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="https://picsum.photos/50/50" alt="">
-                <h4>Feature #3</h4>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <button>Contact</button>
-        </div>
-    </section>
+
     <section class="">
         <div>
             <img src="https://picsum.photos/720/855" alt="">
