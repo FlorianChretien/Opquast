@@ -1,32 +1,40 @@
-<?php get_header() ?>
+<?php get_header('opquast') ?>
 
     <section class="wrap-overview">
         <div class="container">
-            <div class="title-overview">
-                <h1>Lorem ipsum dolor sit amet</h1>
-                <p class="baseline-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="head-overview">
+                <div class="text-overview">
+                    <h1>Passez une certification web de qualité</h1>
+                    <p class="baseline-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="button-overview">
+                    <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
+                    <a href="#" class="btn btn-primary btn-lg">Test gratuit</a>
+                </div>
             </div>
 
-            <div class="wrap-button">
-                <a href="#" class="btn-primary">Découvrir</a>
-                <a href="#" class="btn-primary">Test gratuit</a>
-            </div>
-
-            <div>
-                <div>
-                    <img src="https://picsum.photos/70/70" alt="">
-                    <h4>Certification</h4>
-                    <button>Decouvrir</button>
+            <div class="wrap-anchors">
+                <div class="anchor">
+                    <img src="https://picsum.photos/70/70" alt="" class="img-anchor">
+                    <div class="text-anchors">
+                        <p class="title-anchor">Certification</p>
+                        <a href="certification" class="btn btn-primary btn-md">Découvrir</a>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://picsum.photos/90/90" alt="">
-                    <h4>Formation</h4>
-                    <button>Decouvrir</button>
+                <div class="anchor">
+                    <img src="https://picsum.photos/90/90" alt="" class="img-anchor">
+                    <div class="text-anchors">
+                        <p class="title-anchor">Formation</p>
+                        <a href="formation" class="btn btn-primary btn-md">Découvrir</a>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://picsum.photos/90/90" alt="">
-                    <h4>Cheklists</h4>
-                    <button>Decouvrir</button>
+                <div class="anchor">
+                    <img src="https://picsum.photos/90/90" alt="" class="img-anchor">
+                    <div class="text-anchors">
+                        <p class="title-anchor">Cheklists</p>
+                        <a href="checklist" class="btn btn-primary btn-md">Découvrir</a>
+                    </div>
                 </div>
 
             </div>
@@ -195,4 +203,4 @@
         <button></button>
     </section>
 
-<?php get_footer() ?>
+<?php get_footer('opquast') ?>
