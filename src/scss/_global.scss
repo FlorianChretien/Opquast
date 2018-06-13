@@ -102,7 +102,6 @@ html {
 //}
 
 body {
-<<<<<<< HEAD
   font-family: $texte;
   font-size: $size16;
   color: $blue;
@@ -117,19 +116,6 @@ h6 {
   font-family: $title;
   letter-spacing: .1rem;
 }
-=======
-  font-family: $font-family;
-  font-size: $size16;
-  line-height: $size26;
-  color: $blue;
-}
-
-//h1 {
-//  font-size: 13rem;
-//  line-height: 18rem;
-//  font-weight: 700;
-//}
->>>>>>> 33d59dcafdb7cbf5458060a85e16eb5ab073bc0e
 
 h1 {
   font-size: $size20;
@@ -154,14 +140,6 @@ img {
   @include btn-primary();
 }
 
-.btn {
-  @include btn();
-}
-
-// mobile
-//html {
-//  font-size: 100%;
-//}
 .container {
   padding: 5rem;
 }
@@ -170,10 +148,7 @@ img {
   background-color: $grey;
 
   .container {
-<<<<<<< HEAD
     padding: 1rem 2rem;
-=======
->>>>>>> 33d59dcafdb7cbf5458060a85e16eb5ab073bc0e
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -316,11 +291,7 @@ img {
 
     .link-home {
       .img-logo {
-<<<<<<< HEAD
         width: 10rem;
-=======
-        height: 12.5rem;
->>>>>>> 33d59dcafdb7cbf5458060a85e16eb5ab073bc0e
       }
     }
 
