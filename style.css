@@ -89,6 +89,9 @@ html {
   width: 100%;
   height: 100%; }
 
+html {
+  font-size: 62.5%; }
+
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -116,7 +119,7 @@ img {
 
 .container {
   max-width: 200rem;
-  padding: 1.5rem; }
+  padding: 2rem; }
 
 .btn {
   display: block;
@@ -161,9 +164,6 @@ img {
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
       opacity: 1; }
-
-.container {
-  padding: 5rem; }
 
 .wrap-header {
   background-color: #e8eff7; }
@@ -614,7 +614,8 @@ img {
     font-size: 3rem; }
   .wrap-presentation .content-presentation .subtitle-presentation {
     font-size: 2rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
   .wrap-presentation .content-presentation .wrap-features {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -622,7 +623,8 @@ img {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
-            flex-flow: column wrap; }
+            flex-flow: column wrap;
+    padding: 0 2rem; }
     .wrap-presentation .content-presentation .wrap-features .feature {
       display: -webkit-box;
       display: -ms-flexbox;

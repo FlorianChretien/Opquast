@@ -79,13 +79,16 @@
         </div>
     </section>
 
-    <section class="">
-        <div>
-            <img src="https://picsum.photos/720/855" alt="">
+    <section id="certification" class="wrap-certification">
+        <div class="img-certification">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="http://via.placeholder.com/720x855">
+                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
+            </picture>
         </div>
-        <div>
-            <div>
-                <h2>Certification</h2>
+        <div class="content-certification">
+            <div class="text-certification">
+                <h2 class="">Certification</h2>
                 <h4>Lorem ipsum dolor sit alem, consecteur adipising emilie.</h4>
             </div>
             <div>

@@ -79,11 +79,13 @@
     .subtitle-presentation {
       font-size: 2rem;
       margin-top: 1rem;
+      margin-bottom: 2rem;
     }
 
     .wrap-features {
       display: flex;
       flex-flow: column wrap;
+      padding: 0 2rem;
 
       .feature {
         display: flex;

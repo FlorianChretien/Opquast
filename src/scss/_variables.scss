@@ -19,7 +19,7 @@ $blue-light: #d3e8fc;
 $blue: #3c88b5;
 $white: #fff;
 
-@mixin btn-primary() {
+@mixin btn() {
   display: block;
   text-align: center;
   margin: 1rem;
