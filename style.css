@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/*
+	Theme Name: Opquast Marron
+	Theme URI:
+	Description: Le super theme Opquast de l'équipe Marron
+	Version: 0.0.1
+	Author: La super équipe marron
+	Author URI: https://github.com/FlorianChretien/OpquastMarron
+	Tags:
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: #3c88b5; }
+
+h1 {
+  font-size: 6rem;
+  line-height: 7rem;
+  font-weight: 700; }
+
+a {
+  text-decoration: none;
+  color: #3c88b5; }
+
+.container {
+  max-width: 200rem;
+  padding: 5rem; }
+
+.wrap-header {
+  background-color: #e8eff7; }
+  .wrap-header .container {
+    padding: 1rem 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .wrap-header .container .link-home .img-logo {
+      max-width: 20rem; }
+    .wrap-header .container .wrap-navigation > ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .wrap-header .container .wrap-navigation > ul > li {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        margin: 0 2rem; }
+
+.wrap-overview .baseline-overview {
+  font-size: 1.6rem; }
+
+.wrap-overview .wrap-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 2rem; }
+  .wrap-overview .wrap-button > * {
+    border: 0.2rem solid #3c88b5;
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+    font-size: 2rem; }
+    .wrap-overview .wrap-button > *:not(:last-child) {
+      margin-right: 2rem; }

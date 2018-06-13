@@ -1,0 +1,17 @@
+$font-family: Arial, Helvetica, sans-serif;
+
+$size14: 1.4rem;
+$size16: 1.6rem;
+$size20: 2rem;
+$size60: 6rem;
+
+$grey: #e8eff7;
+$blue: #3c88b5;
+
+@mixin btn-primary() {
+  border: .2rem solid $blue;
+  border-radius: .5rem;
+  padding: 1.5rem 2rem;
+  text-transform: uppercase;
+  font-size: $size20;
+}
