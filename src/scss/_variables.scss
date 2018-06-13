@@ -7,7 +7,11 @@ $bold: 700;
 
 $size14: 1.4rem;
 $size16: 1.6rem;
+$size18: 1.8rem;
 $size20: 2rem;
+$size26: 2.6rem;
+$size36: 3.6rem;
+$size46: 4.6rem;
 $size60: 6rem;
 
 $grey: #e8eff7;
@@ -15,6 +19,7 @@ $blue-light: #d3e8fc;
 $blue: #3c88b5;
 $white: #fff;
 
+<<<<<<< HEAD
 @mixin btn-primary() {
   display: block;
   text-align: center;
@@ -61,6 +66,25 @@ $white: #fff;
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
         opacity: 1;
+=======
+@mixin btn() {
+  display: block;
+  text-align: center;
+
+  &.btn-primary {
+    text-transform: uppercase;
+    border: .2rem solid $blue;
+    border-radius: .5rem;
+
+    &.btn-lg {
+      font-size: 4rem;
+      padding: 4rem 8rem;
+    }
+
+    &.btn-md {
+      font-size: $size14;
+      padding: 1.5rem 3rem;
+>>>>>>> 33d59dcafdb7cbf5458060a85e16eb5ab073bc0e
     }
   }
 }
