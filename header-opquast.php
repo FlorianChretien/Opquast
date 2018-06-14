@@ -16,12 +16,23 @@
             <span class="text">MENU</span>
         </div>
 
-        <a href="http://127.0.0.1:8080/edsa-opquast-brown/" class="link-home">
-            <img src="http://localhost/_ECVDigital/opquast/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
+        <a href="<?php echo get_site_url() ?>" class="link-home">
+            <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
         </a>
 
         <nav role="navigation" class="wrap-navigation"
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
+
+        <a href="<?php echo get_site_url() ?>/login">
+            <button>Connexion</button>
+        </a>
+
+        <form role="search" method="get" id="searchform" class="searchform"
+              action="<?php echo get_site_url() ?>">
+            <!--<label class="screen-reader-text" for="s">Search for:</label>-->
+            <input type="search" value="" name="s" id="s" placeholder="Recherche"/>
+            <!--<input type="submit" id="searchsubmit" value="Search" />-->
+        </form>
     </div>
 </header>
