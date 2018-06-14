@@ -79,87 +79,126 @@
         </div>
     </section>
 
-    <section id="certification" class="wrap-certification">
-        <div class="img-certification">
+    <section id="certification" class="wrap-service">
+        <div class="img-service">
             <picture>
                 <source media="(min-width: 1440px)" srcset="http://via.placeholder.com/720x855">
                 <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
             </picture>
         </div>
-        <div class="content-certification">
-            <div class="text-certification">
-                <h2 class="">Certification</h2>
-                <h4>Lorem ipsum dolor sit alem, consecteur adipising emilie.</h4>
-            </div>
-            <div>
-                <img src="https://picsum.photos/50/50" alt="">
-                <h3>Feature #1</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="https://picsum.photos/50/50" alt="">
-                <h3>Feature #2</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="https://picsum.photos/50/50" alt="">
-                <h3>Feature #3</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-        </div>
-    </section>
-    <section class="">
-        <div>
-            <div>
-                <h2>Formations</h2>
-                <h3>Lorem ipsum dolor sit alem, consecteur adipising emilie.</h3>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Feature #1</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Feature #2</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Feature #3</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-        </div>
-        <div>
-            <img src="https://picsum.photos/720/855" alt="">
-        </div>
-    </section>
-    <section class="">
-        <div>
-            <img src="https://picsum.photos/720/855" alt="">
-        </div>
-        <div>
-            <div>
-                <h2>Checklists</h2>
-                <h3>Lorem ipsum dolor sit alem, consecteur adipising emilie.</h3>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Feature #1</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Feature #2</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Feature #3</h3>
-                <p>Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+        <div class="container">
+            <div class="content-service">
+                <div class="text-service">
+                    <h2 class="title-service">Certification</h2>
+                    <h4 class="subtitle-service">Lorem ipsum dolor sit alem, consecteur adipising emilie.</h4>
+                </div>
+                <div class="wrap-features">
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #1</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #2</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #3</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="formation" class="wrap-service">
+        <div class="img-service">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="http://via.placeholder.com/720x855">
+                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="content-service">
+                <div class="text-service">
+                    <h2 class="title-service">Formation</h2>
+                    <h4 class="subtitle-service">Lorem ipsum dolor sit alem, consecteur adipising emilie.</h4>
+                </div>
+                <div class="wrap-features">
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #1</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #2</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #3</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="check-list" class="wrap-service">
+        <div class="img-service">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="http://via.placeholder.com/720x855">
+                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="content-service">
+                <div class="text-service">
+                    <h2 class="title-service">Check list</h2>
+                    <h4 class="subtitle-service">Lorem ipsum dolor sit alem, consecteur adipising emilie.</h4>
+                </div>
+                <div class="wrap-features">
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #1</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #2</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="text-feature">
+                            <h3 class="title-feature">Feature #3</h3>
+                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="">
         <div>
             <button><</button>

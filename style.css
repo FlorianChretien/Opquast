@@ -176,9 +176,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -534,6 +534,44 @@ img {
     .wrap-header .container .wrap-navigation {
       display: none; }
 
+.wrap-footer {
+  background-color: #d3e8fc; }
+  .wrap-footer > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .wrap-footer > * .link-home .img-logo {
+      max-width: 7rem; }
+    .wrap-footer > * .wrap-navigation > * {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .wrap-footer > * .wrap-navigation > * > * {
+        margin: 0 .5rem; }
+    .wrap-footer > * .wrap-social .social-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .wrap-footer > * .wrap-social .social-list .item-social {
+        margin: 0 .5rem; }
+        .wrap-footer > * .wrap-social .social-list .item-social .link-social .img-social {
+          width: 1.5rem; }
+
 .wrap-overview {
   background-color: #e8eff7;
   padding-top: 5rem;
@@ -605,6 +643,36 @@ img {
           .wrap-overview .container .wrap-anchors .anchor .text-anchors .btn {
             display: none; }
 
+.wrap-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 0 2rem; }
+  .wrap-features .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin: 1rem 0; }
+    .wrap-features .feature img {
+      width: 5rem;
+      margin-right: 2rem; }
+    .wrap-features .feature .text-feature {
+      line-height: 2rem; }
+      .wrap-features .feature .text-feature .title-feature {
+        font-weight: 700;
+        font-size: 1.8rem; }
+
 .wrap-presentation {
   background-color: #d3e8fc;
   padding: 2rem; }
@@ -616,32 +684,14 @@ img {
     font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 2rem; }
-  .wrap-presentation .content-presentation .wrap-features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    padding: 0 2rem; }
-    .wrap-presentation .content-presentation .wrap-features .feature {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: start;
-      margin: 1rem 0; }
-      .wrap-presentation .content-presentation .wrap-features .feature img {
-        width: 5rem;
-        margin-right: 2rem; }
-      .wrap-presentation .content-presentation .wrap-features .feature .text-feature {
-        line-height: 2rem; }
-        .wrap-presentation .content-presentation .wrap-features .feature .text-feature .title-feature {
-          font-weight: 700;
-          font-size: 1.8rem; }
+
+.wrap-service {
+  background-color: #e8eff7; }
+  .wrap-service .content-service .text-service {
+    text-align: center; }
+    .wrap-service .content-service .text-service .title-service {
+      font-size: 3rem; }
+    .wrap-service .content-service .text-service .subtitle-service {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
