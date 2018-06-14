@@ -6,6 +6,7 @@ module.exports = {
   entry: ['./src/js/main.js', './src/scss/style.scss'],
   output: {
     filename: './dist/js/main.min.js',
+
   },
   module: {
     rules: [

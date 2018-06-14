@@ -6,3 +6,5 @@ Dans le theme faire un `yarn run watch`
 
 - Contact Form 7
 - Owl Carousel
+- Relevanssi
+- Wp Quiz
