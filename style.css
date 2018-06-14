@@ -58,6 +58,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?s5aglo');
+  src:  url('../fonts/icomoon.eot?s5aglo#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?s5aglo') format('truetype'),
+  url('../fonts/icomoon.woff?s5aglo') format('woff'),
+  url('../fonts/icomoon.svg?s5aglo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -695,3 +705,22 @@ img {
       font-size: 2rem;
       margin-top: 1rem;
       margin-bottom: 2rem; }
+
+#page-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #fff; }
+  #page-login section {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    width: 64%;
+    background-color: #ec6359; }
+    #page-login section:last-child {
+      width: 36%;
+      background-color: #f9f9f9; }

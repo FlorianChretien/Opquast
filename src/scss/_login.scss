@@ -1,0 +1,17 @@
+#page-login{
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+
+  section{
+    flex: auto;
+    width: 64%;
+    background-color: #ec6359;
+
+    &:last-child{
+      width: 36%;
+      background-color: #f9f9f9 ;
+    }
+
+  }
+}

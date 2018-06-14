@@ -24,7 +24,7 @@
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
 
-        <a href="<?php echo get_site_url() ?>/login">
+        <a href="<?php echo get_site_url() ?>/login/">
             <button>Connexion</button>
         </a>
 
