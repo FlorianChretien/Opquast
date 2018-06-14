@@ -2,7 +2,7 @@
         <div class="container">
             <a href="http://127.0.0.1:8080/edsa-opquast-brown/" class="link-home">
                 <!--            <img src="http://localhost/_ECVDigital/opquast/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">-->
-                <img src="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
+                <img src="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/logo_opquast_no-baseline_white.png" alt="Logotype Opquast" class="img-logo">
             </a>
 
             <nav role="navigation" class="wrap-navigation">

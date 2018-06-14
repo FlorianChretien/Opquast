@@ -1,17 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("ok");
+var button = $("#menu-btn");
 
-  var button = document.getElementById('menu-btn');
+button.click(function(e) {
+  e.preventDefault();
 
-  button.on('click', function(e) {
-    e.preventDefault();
-
-    if( button.hasClass('open') ){
-      button.removeClass('open');
-      button.addClass('close');
-    } else {
-      button.removeClass('close');
-      button.addClass('open');
-    }
-  });
-}, { once: true });
+  if (button.hasClass('open')) {
+    button.removeClass('open');
+    button.addClass('close');
+  } else {
+    button.removeClass('close');
+    button.addClass('open');
+  }
+});

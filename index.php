@@ -4,7 +4,7 @@
         <div class="container">
             <div class="head-overview">
                 <div class="text-overview">
-                    <h1>Passez une certification web de qualité</h1>
+                    <h1 class="title-overview">Passez une certification web de qualité</h1>
                     <p class="baseline-overview">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
 
@@ -199,63 +199,27 @@
         </div>
     </section>
 
-    <section class="">
-        <div>
-            <button><</button>
-            <div>
-                <div>
-                    <img src="https://picsum.photos/280/280" alt="">
-                    <h3>Emilie Rozis</h3>
-                    <h4>Ux design</h4>
-                </div>
-                <div>
-                    <img src="https://picsum.photos/280/280" alt="">
-                    <h3>John Doe</h3>
-                    <h4>Developpeur</h4>
-                </div>
-                <div>
-                    <img src="https://picsum.photos/280/280" alt="">
-                    <h3>Florian Chrétien</h3>
-                    <h4>Webmarketing</h4>
-                </div>
-            </div>
-            <button>></button>
+    <section class="wrap-team">
+        <div class="container">
+            <h2 class="title-carousel">L'équipe Opquast</h2>
+            <?php echo do_shortcode('[owl-carousel category="team" singleItem="true" autoPlay="true"]'); ?>
         </div>
     </section>
-    <section class="">
-        <h2>Ils nous font confiance</h2>
-        <div>
-            <button><</button>
-            <div>
-                <div class="header">
-                    <img src="https://picsum.photos/255/37" alt="">
-                    <img src="https://picsum.photos/158/37" alt="">
-                    <img src="https://picsum.photos/160/37" alt="">
-                    <img src="https://picsum.photos/260/37" alt="">
-                </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et elementum metus. Suspendisse libero libero, hendrerit vel sollicitudin et, posuere ac massa.
-                        Aliquam enim mi, ullamcorper ut ipsum sed, aliquam vestibulum quam. Aliquam vel metus auctor, sollicitudin purus ac, varius ipsum.
-                    </p>
-                </div>
-            </div>
-            <button>></button>
+
+    <section class="wrap-customer">
+        <div class="container">
+            <h2 class="title-carousel">Ils nous ont fait confiance</h2>
+            <?php echo do_shortcode('[metaslider id="37"]'); ?>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et elementum metus. Suspendisse libero libero, hendrerit vel. Bla varius ipsum da sed elit.</p>
         </div>
     </section>
-    <section class="">
-        <h2>Testimonials</h2>
-        <button></button>
-        <div>
-            <img src="https://picsum.photos/334/334" alt="">
-            <div>
-                <img src="https://picsum.photos/40/32" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et elementum metus. Suspendisse libero libero, hendrerit vel. Bla varius ipsum da sed elit.</p>
-                <h6>John Doe</h6>
-                <p>CEO of the best compagny</p>
-            </div>
+
+    <section class="wrap-testimonial">
+        <div class="container">
+            <h2 class="title-carousel">Témoignages</h2>
+            <?php echo do_shortcode('[owl-carousel category="customers" autoPlay="true"]'); ?>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et elementum metus. Suspendisse libero libero, hendrerit vel. Bla varius ipsum da sed elit.</p>
         </div>
-        <button></button>
     </section>
 
 <?php get_footer('opquast') ?>

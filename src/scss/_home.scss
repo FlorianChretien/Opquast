@@ -1,6 +1,5 @@
 // mobile first
 .wrap-overview {
-  background-color: $grey;
   padding-top: 5rem;
   padding-bottom: 5rem;
 
@@ -13,11 +12,37 @@
         display: none;
       }
 
+      @media (min-width: 64rem) {
+        .text-overview {
+          display: block;
+          max-width: 120rem;
+
+          .title-overview {
+            margin-bottom: 2rem;
+          }
+
+          .baseline-overview {
+            font-size: 2rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+
       .button-overview {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         margin-top: 3rem;
+
+        .btn {
+          @include btn($orange, $white);
+        }
+      }
+
+      @media (min-width: 64rem) {
+        .button-overview {
+          justify-content: end;
+        }
       }
     }
 
@@ -26,6 +51,7 @@
       flex-flow: row nowrap;
       justify-content: center;
       background-color: $white;
+      border-radius: 1rem;
       padding: 5rem 0;
       width: 100%;
 
@@ -39,11 +65,11 @@
         align-items: center;
 
         &:not(:last-child) {
-          border-right: 1px solid $blue;
+          border-right: .1rem solid $grey-dark;
         }
 
         .img-anchor {
-          width: 45px;
+          width: 4.5rem;
         }
 
         .text-anchors {
@@ -51,6 +77,7 @@
 
           .title-anchor {
             font-size: 1.2rem;
+            font-weight: $bold;
             text-transform: uppercase;
           }
 
@@ -60,6 +87,38 @@
         }
       }
     }
+
+    @media (min-width: 64rem) {
+      .wrap-anchors {
+        max-width: 81rem;
+        margin: 10rem auto 10rem auto;
+
+        .anchor {
+          .img-anchor {
+            width: 10rem;
+          }
+
+          .text-anchors {
+            .title-anchor {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .container {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 64rem) {
+  .wrap-overview {
+    height: calc(100vh - 12.5rem);
+    padding-top: 15rem;
   }
 }
 
@@ -83,49 +142,145 @@
       line-height: 2rem;
 
       .title-feature {
+        font-family: $title;
         font-weight: $bold;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .legend-feature {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
       }
     }
   }
 }
 
+@mixin title() {
+  font-size: 4rem;
+  font-weight: $bold;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin subtitle() {
+  font-family: $texte;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
 .wrap-presentation {
-  background-color: $blue-light;
+  background-color: $grey-light;
+  color: $white;
   padding: 2rem;
 
   .head-presentation {
     display: none;
   }
 
+  @media (min-width: 64rem) {
+    .head-presentation {
+      display: block;
+    }
+  }
+
   .content-presentation {
     .title-presentation {
-      font-size: 3rem;
+      @include title();
     }
 
     .subtitle-presentation {
-      font-size: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
+      @include subtitle();
+    }
+  }
+}
+
+@media (min-width: 64rem) {
+  .wrap-presentation {
+    padding: 0;
+
+    .container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      margin-left: 0;
+      padding-left: 0;
+
+      > * {
+        flex-grow: 1;
+        padding: 4rem 8rem;
+      }
+
+      .head-presentation {
+        background-color: $grey-dark;
+        background-size: cover;
+      }
     }
   }
 }
 
 .wrap-service {
-  background-color: $grey;
+  color: $white;
 
   .content-service {
     .text-service {
       text-align: center;
 
       .title-service {
-        font-size: 3rem;
+        @include title();
       }
 
       .subtitle-service {
-        font-size: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
+        @include subtitle();
+      }
+    }
+  }
+}
+
+#certification {
+  background-color: $blue;
+}
+
+#formation {
+  background-color: $orange;
+}
+
+#check-list {
+  background-color: $green;
+}
+
+.title-carousel {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2.5rem 0;
+}
+
+.title-carousel {
+  @include title();
+}
+
+.wrap-team {
+  background-color: $grey-dark;
+  color: $white;
+
+  > * {
+    .owl-carousel-team {
+      .owl-wrapper-outer {
+        .owl-wrapper {
+          .owl-item {
+            .item {
+              text-align: center;
+              img {
+                width: 15rem;
+              }
+            }
+          }
+        }
       }
     }
   }

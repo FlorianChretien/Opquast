@@ -103,8 +103,9 @@ html {
 
 body {
   font-family: $texte;
-  font-size: $size16;
-  color: $blue;
+  font-size: 1.6rem;
+  color: $black;
+  background-color: $grey-light;
 }
 
 h1,
@@ -118,13 +119,14 @@ h6 {
 }
 
 h1 {
-  font-size: $size20;
+  font-size: 6rem;
+  font-weight: $semi-bold;
   line-height: 3rem;
 }
 
 a {
   text-decoration: none;
-  color: $blue;
+  color: $black;
 }
 
 img {
@@ -132,17 +134,21 @@ img {
 }
 
 .container {
-  max-width: 200rem;
+  max-width: 180rem;
+  margin: 0 auto;
   padding: 2rem;
+}
+@media (min-width: 64rem) {
+  .container {
+    padding: 0 7rem;
+  }
 }
 
 .btn {
-  @include btn();
+  @include btn($grey-dark, $white);
 }
 
 .wrap-header {
-  background-color: $grey;
-
   .container {
     padding: 1rem 2rem;
     display: flex;
@@ -218,7 +224,7 @@ img {
         content: '';
         width: 100%;
         height: 8px;
-        background-color: $blue;
+        background-color: $grey-dark;
         display: block;
         position: absolute;
         border-radius: 20px;
@@ -236,11 +242,12 @@ img {
       }
 
       .text {
-        color: $blue;
+        color: $grey-dark;
         display: block;
         position: absolute;
         bottom: 0;
         font-size: 17px;
+        font-weight: $bold;
         letter-spacing: 2.5px;
       }
 
@@ -289,16 +296,70 @@ img {
       .img-logo {
         width: 10rem;
       }
+
+      @media (min-width: 64rem) {
+        .img-logo {
+          width: 20rem;
+        }
+      }
     }
 
     .wrap-navigation {
       display: none;
     }
+
+    @media (min-width: 64rem) {
+      .wrap-navigation {
+        display: block;
+
+        .menu {
+          ul {
+            display: flex;
+            flex-direction: row nowrap;
+
+            li {
+              margin: 0 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .container {
+      padding: 3rem 7rem;
+
+      #menu-btn {
+        order: 3;
+      }
+
+      .link-home {
+        order: 1;
+      }
+
+      .wrap-navigation {
+        order: 2;
+
+        .menu {
+          ul {
+            li {
+              a {
+                font-family: $title;
+                font-weight: $semi-bold;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .wrap-footer {
-  background-color: $blue-light;
+  background-color: $grey-dark;
+  color: $white;
 
   > * {
     display: flex;
@@ -318,6 +379,10 @@ img {
 
         > * {
           margin: 0 .5rem;
+
+          a {
+            color: $white;
+          }
         }
       }
     }

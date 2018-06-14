@@ -4,7 +4,10 @@
       <meta charset="UTF-8">
       <title><?php wp_title(''); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-      <?php wp_head(); ?>
+        <?php wp_enqueue_script("jquery"); ?>
+        <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/jquery-3.3.1.min.js"></script>
+        <?php wp_head(); ?>
+
     </head>
 <body>
 
