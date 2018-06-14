@@ -6,3 +6,4 @@ Dans le theme faire un `yarn run watch`
 
 - Contact Form 7
 - Relevanssi
+- Wp Quiz
