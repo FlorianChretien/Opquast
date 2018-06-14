@@ -20,7 +20,7 @@
             <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
         </a>
 
-        <nav role="navigation" class="wrap-navigation"
+        <nav role="navigation" class="wrap-navigation">
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
 
