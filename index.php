@@ -41,53 +41,57 @@
     </section>
 
     <section class="wrap-presentation">
-        <div class="container">
             <div class="head-presentation">
-                <h2>Lorem ipsum dolor sit amet</h2>
-                <h3>Cras hendrerit tortor erat, non suscipit nunc pharetra sed.</h3>
+                <div class="container">
+                <h2 class="title-presentation">Lorem ipsum dolor sit amet</h2>
+                <h3 class="text-presentation">Cras hendrerit tortor erat, non suscipit nunc pharetra sed.</h3>
+                </div>
             </div>
 
             <div class="content-presentation">
-                <h3 class="title-presentation">Iphone App</h3>
-                <h4 class="subtitle-presentation">Cras hendrerit tortor erat, non suscipit nunc.</h4>
+                <div class="container">
+                    <h3 class="title-presentation">Iphone App</h3>
+                    <h4 class="subtitle-presentation">Cras hendrerit tortor erat, non suscipit nunc.</h4>
 
-                <div class="wrap-features">
-                    <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
-                        <div class="text-feature">
-                            <h4 class="title-feature">Feature #1</h4>
-                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                    <div class="wrap-features">
+                        <div class="feature">
+                            <img src="http://via.placeholder.com/50x50" alt="">
+                            <div class="text-feature">
+                                <h4 class="title-feature">Feature #1</h4>
+                                <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <img src="http://via.placeholder.com/50x50" alt="">
+                            <div class="text-feature">
+                                <h4 class="title-feature">Feature #2</h4>
+                                <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <img src="http://via.placeholder.com/50x50" alt="">
+                            <div class="text-feature">
+                                <h4 class="title-feature">Feature #3</h4>
+                                <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
-                        <div class="text-feature">
-                            <h4 class="title-feature">Feature #2</h4>
-                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
-                        <div class="text-feature">
-                            <h4 class="title-feature">Feature #3</h4>
-                            <p class="legend-feature">Morbi metus dolor, maximus id massa sit amet, cursus semper nulla.</p>
-                        </div>
-                    </div>
+                    <a href="#" class="btn btn-primary btn-md">Contact</a>
                 </div>
-                <a href="#" class="btn btn-primary btn-md">Contact</a>
             </div>
-        </div>
     </section>
 
     <section id="certification" class="wrap-service">
         <div class="img-service">
-            <picture>
-                <source media="(min-width: 1440px)" srcset="http://via.placeholder.com/720x855">
-                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
-            </picture>
+            <div class="container">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/certification.jpg">
+                    <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
+                </picture>
+            </div>
         </div>
-        <div class="container">
-            <div class="content-service">
+        <div class="content-service">
+            <div class="container">
                 <div class="text-service">
                     <h2 class="title-service">Certification</h2>
                     <h4 class="subtitle-service">Lorem ipsum dolor sit alem, consecteur adipising emilie.</h4>

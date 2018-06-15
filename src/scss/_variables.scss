@@ -6,13 +6,16 @@ $texte: 'Open Sans', Arial, Helvetica, sans-serif;
 $semi-bold: 600;
 $bold: 700;
 
-$blue: #27c4f4;
+$bg: #e8eff7;
+$blue: #a0d8f1;
 $orange: #ec6359;
-$grey-light: #4e5966;
 $green: #38b188;
+$grey: #4e5966;
 $grey-dark: #323b44;
 $black: #333331;
 $white: #fff;
+
+$container-with: 180rem;
 
 @mixin btn($color, $txt) {
   font-family: $title;

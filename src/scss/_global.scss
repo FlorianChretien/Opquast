@@ -105,7 +105,10 @@ body {
   font-family: $texte;
   font-size: 1.6rem;
   color: $black;
-  background-color: $grey-light;
+  background-color: $bg;
+  background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/overview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -134,7 +137,7 @@ img {
 }
 
 .container {
-  max-width: 180rem;
+  max-width: $container-with;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -331,7 +334,7 @@ img {
       padding: 3rem 7rem;
 
       #menu-btn {
-        order: 3;
+        order: 4;
       }
 
       .link-home {
@@ -352,6 +355,10 @@ img {
             }
           }
         }
+      }
+
+      .link-login {
+        order: 3;
       }
     }
   }

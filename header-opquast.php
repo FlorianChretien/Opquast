@@ -27,15 +27,13 @@
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </nav>
 
-        <a href="<?php echo get_site_url() ?>/login/">
-            <button>Connexion</button>
-        </a>
+        <a href="<?php echo get_site_url() ?>/login/" class="link-login btn btn-primary">Connexion</a>
 
-        <form role="search" method="get" id="searchform" class="searchform"
-              action="<?php echo get_site_url() ?>">
-            <!--<label class="screen-reader-text" for="s">Search for:</label>-->
-            <input type="search" value="" name="s" id="s" placeholder="Recherche"/>
-            <!--<input type="submit" id="searchsubmit" value="Search" />-->
-        </form>
+<!--        <form role="search" method="get" id="searchform" class="searchform"-->
+<!--              action="--><?php //echo get_site_url() ?><!--">-->
+<!--            <!--<label class="screen-reader-text" for="s">Search for:</label>-->
+<!--            <input type="search" value="" name="s" id="s" placeholder="Recherche"/>-->
+<!--            <!--<input type="submit" id="searchsubmit" value="Search" />-->
+<!--        </form>-->
     </div>
 </header>
