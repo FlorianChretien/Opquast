@@ -13,13 +13,13 @@
         <?php wp_head(); ?>
     </head>
     <body>
+        <div class="header">
         <?php
         switch ($post_slug){
             case '':
-                echo '<div class="header">
-                <video autoplay loop muted id="bg-video">
-                    <source src="'.get_site_url().'/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
-                </video>';
+                echo ' <video autoplay loop muted id="bg-video">
+                        <source src="'.get_site_url().'/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
+                       </video>';
                 break;
         }
         ?>
