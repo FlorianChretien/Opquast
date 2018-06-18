@@ -16,21 +16,21 @@
 
                 <div class="wrap-anchors">
                     <div class="anchor">
-                        <img src="http://via.placeholder.com/45x45" alt="" class="img-anchor">
+                        <span class="icon-certification img-anchor"></span>
                         <div class="text-anchors">
                             <p class="title-anchor">Certification</p>
                             <a href="#certification" class="btn btn-primary btn-sm">Découvrir</a>
                         </div>
                     </div>
                     <div class="anchor">
-                        <img src="http://via.placeholder.com/45x45" alt="" class="img-anchor">
+                        <span class="icon-formations img-anchor"></span>
                         <div class="text-anchors">
                             <p class="title-anchor">Formations</p>
                             <a href="#formation" class="btn btn-primary btn-sm">Découvrir</a>
                         </div>
                     </div>
                     <div class="anchor">
-                        <img src="http://via.placeholder.com/45x45" alt="" class="img-anchor">
+                        <span class="icon-check-lists img-anchor"></span>
                         <div class="text-anchors">
                             <p class="title-anchor">Check-lists</p>
                             <a href="#check-list" class="btn btn-primary btn-sm">Découvrir</a>
@@ -56,21 +56,27 @@
 
                     <div class="wrap-features">
                         <div class="feature">
-                            <img src="http://via.placeholder.com/50x50" alt="">
+                            <div class="wrap-icon">
+                                <span class="icon-experts icon-feature"></span>
+                            </div>
                             <div class="text-feature">
                                 <h3 class="title-feature">6 experts du domaine du Web</h3>
                                 <p class="legend-feature">Depuis sa création, Opquast, est accompagnée par 6 experts pour développer au mieux ses outils et ses certifications. </p>
                             </div>
                         </div>
                         <div class="feature">
-                            <img src="http://via.placeholder.com/50x50" alt="">
+                            <div class="wrap-icon">
+                                <span class="icon-experience icon-feature"></span>
+                            </div>
                             <div class="text-feature">
                                 <h3 class="title-feature">18 ans d'expérience</h3>
                                 <p class="legend-feature">Parmi les pionnières des entreprises web de la région, Opquast est la référence en terme de qualité web.</p>
                             </div>
                         </div>
                         <div class="feature">
-                            <img src="http://via.placeholder.com/50x50" alt="">
+                            <div class="wrap-icon">
+                                <span class="icon-partners icon-feature"></span>
+                            </div>
                             <div class="text-feature">
                                 <h3 class="title-feature">+ de 100 partenaires</h3>
                                 <p class="legend-feature">Nous suivent dans ce projet : entreprises, écoles et agences</p>
@@ -97,21 +103,27 @@
                 </div>
                 <div class="wrap-features">
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-expertise icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">Devenez expert de la qualité web</h3>
                             <p class="legend-feature">Suivez les modules et les minis cours pour obtenir un degré de maîtrise de la qualité en projet web.</p>
                         </div>
                     </div>
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-communication icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">Améliorez la communication interne des équipes</h3>
                             <p class="legend-feature">Pendant la certification, tous les corps de métier doivent adopter le même langage pour comprendre les différentes questions.</p>
                         </div>
                     </div>
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-recognition icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">Reconnue par l’État et les entreprises</h3>
                             <p class="legend-feature">La certification est inscrite au <a href="http://inventaire.cncp.gouv.fr/fiches/2363/">INCP (Inventaire National des Certifications Professionnelles)</a>. De plus de nombreuses entreprises l’utilisent comme référence pour connaître le degré de maîtrise des futurs employés.</p>
@@ -138,21 +150,27 @@
                 </div>
                 <div class="wrap-features">
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-trainings icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">2 formations</h3>
                             <p class="legend-feature">Pour répondre aux besoins de l’équipe, nous vous proposons les formations : "Sensibilisation à la qualité Web” et “Référent qualité web".</p>
                         </div>
                     </div>
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-trainers icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">15 formateurs</h3>
                             <p class="legend-feature">Tous experts dans leur secteur. Ils seront présents dans votre entreprise le temps de la formation.</p>
                         </div>
                     </div>
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-result icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">Certification finale Opquast</h3>
                             <p class="legend-feature">Au final : une certification inscrite à l’Inventaire National des Certifications Professionnelles.</p>
@@ -179,21 +197,27 @@
                 </div>
                 <div class="wrap-features">
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-free icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">Gratuites et en libre droit</h3>
                             <p class="legend-feature">Nos check-lists sont sous licence Creative Commons BY-SA. Vous pourrez donc les télécharger et les imprimer gratuitement.</p>
                         </div>
                     </div>
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-match icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">L’application parfaite pour vos projets web</h3>
                             <p class="legend-feature">Si vous désirez aller plus loin inscrivez-vous et découvrez notre application pour valider la qualité de vos différents projets web.</p>
                         </div>
                     </div>
                     <div class="feature">
-                        <img src="http://via.placeholder.com/50x50" alt="">
+                        <div class="wrap-icon">
+                            <span class="icon-criteria icon-feature"></span>
+                        </div>
                         <div class="text-feature">
                             <h3 class="title-feature">400 critères d'évaluation de la qualité </h3>
                             <p class="legend-feature">Tous les critères sont répertoriés dans 10 check-lists complètes.</p>

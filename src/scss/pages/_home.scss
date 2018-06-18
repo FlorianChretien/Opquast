@@ -59,21 +59,42 @@
       border-radius: 1rem;
       width: 100%;
       padding: 3rem 0;
+      height: 24.5rem;
 
       .anchor {
         width: 100%;
         padding: 0 2rem;
         flex-grow: 1;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         justify-content: flex-end;
         align-items: center;
+        text-align: center;
+
+        &:nth-of-type(1) {
+          .img-anchor {
+            color: $blue;
+          }
+        }
+
+        &:nth-of-type(2) {
+          .img-anchor {
+            color: $orange;
+          }
+        }
+
+        &:nth-of-type(3) {
+          .img-anchor {
+            color: $green;
+          }
+        }
 
         &:not(:last-child) {
           border-right: .1rem solid $grey-dark;
         }
 
         .img-anchor {
+          font-size: 4.5rem;
           width: 4.5rem;
         }
 
@@ -97,6 +118,7 @@
 
         .anchor {
           .img-anchor {
+            font-size: 10rem;
             width: 10rem;
           }
 
@@ -113,6 +135,10 @@
           }
 
           &:hover {
+            .img-anchor {
+              font-size: 7rem;
+            }
+
             .btn {
               margin-top: 2rem;
               opacity: 1;
@@ -154,9 +180,15 @@
     align-items: start;
     margin: 2.5rem 0;
 
-    img {
-      width: 5rem;
+    .wrap-icon {
       margin-right: 4.5rem;
+      border-radius: 50%;
+      border: 0.5rem solid #fff;
+      padding: 2.5rem;
+
+      .icon-feature {
+        font-size: 5rem;
+      }
     }
 
     .text-feature {
