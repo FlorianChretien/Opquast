@@ -13,36 +13,43 @@
         <?php wp_head(); ?>
     </head>
 <body>
+    <div class="header">
+        <video autoplay loop muted id="bg-video">
+            <source src="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
+        </video>
 
+        <header class="wrap-header">
+            <div class="container">
+                <a href="<?php echo get_site_url() ?>" class="brand">
+                    <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
+                </a>
 
-<header class="wrap-header">
-    <div class="container">
-        <div id="menu-btn">
-            <span class="icon"></span>
-            <span class="text">MENU</span>
+                <div class="wrap-links">
+                    <nav role="navigation" class="primary-nav">
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                    </nav>
+                    
+                <a href="<?php echo get_site_url() ?>" class="brand">
+                    <?php
+                    if($post_slug == 'certification'){
+                        echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
+                    } else {
+                        echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
+                    }
+                    ?>
+                </a>
+
+            <div id="menu-btn">
+                <span class="icon"></span>
+                <span class="text">MENU</span>
+            </div>
         </div>
 
-        <a href="<?php echo get_site_url() ?>" class="link-home">
-            <?php
-            if($post_slug == 'certification'){
-                echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
-            } else {
-                echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
-            }
-            ?>
-        </a>
-
-        <nav role="navigation" class="wrap-navigation">
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        </nav>
-
-        <a href="<?php echo get_site_url() ?>/login/" class="link-login btn btn-primary">Connexion</a>
-
-<!--        <form role="search" method="get" id="searchform" class="searchform"-->
-<!--              action="--><?php //echo get_site_url() ?><!--">-->
-<!--            <!--<label class="screen-reader-text" for="s">Search for:</label>-->
-<!--            <input type="search" value="" name="s" id="s" placeholder="Recherche"/>-->
-<!--            <!--<input type="submit" id="searchsubmit" value="Search" />-->
-<!--        </form>-->
-    </div>
-</header>
+        <!--        <form role="search" method="get" id="searchform" class="searchform"-->
+        <!--              action="--><?php //echo get_site_url() ?><!--">-->
+        <!--            <!--<label class="screen-reader-text" for="s">Search for:</label>-->
+        <!--            <input type="search" value="" name="s" id="s" placeholder="Recherche"/>-->
+        <!--            <!--<input type="submit" id="searchsubmit" value="Search" />-->
+        <!--        </form>-->
+            </div>
+        </header>
