@@ -11,18 +11,18 @@
     </head>
 <body>
     <div class="header">
-        <video autoplay loop id="bg-video">
-            <source src="" type="">
+        <video autoplay loop muted id="bg-video">
+            <source src="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
         </video>
 
         <header class="wrap-header">
             <div class="container">
-                <a href="<?php echo get_site_url() ?>" class="link-home">
+                <a href="<?php echo get_site_url() ?>" class="brand">
                     <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
                 </a>
 
                 <div class="wrap-links">
-                    <nav role="navigation" class="wrap-navigation">
+                    <nav role="navigation" class="primary-nav">
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                     </nav>
 

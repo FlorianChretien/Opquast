@@ -1,0 +1,561 @@
+// mobile first
+.wrap-overview {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .container {
+    display: flex;
+    flex-flow: column-reverse wrap;
+
+    .head-overview {
+      .text-overview {
+        display: none;
+      }
+
+      @media (min-width: 640px) {
+        .text-overview {
+          display: block;
+          max-width: 125rem;
+
+          .title-overview {
+            margin-bottom: 2rem;
+          }
+
+          .baseline-overview {
+            font-size: 2rem;
+            line-height: 2.5rem;
+          }
+        }
+      }
+
+      .button-overview {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .btn {
+          @include btn($orange, $white);
+        }
+      }
+
+      @media (min-width: 640px) {
+        .button-overview {
+          justify-content: end;
+        }
+      }
+    }
+
+    .wrap-anchors {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      background-color: $white;
+      -moz-box-shadow: 0 0 2rem 0 $grey;
+      -webkit-box-shadow: 0 0 2rem 0 $grey;
+      -o-box-shadow: 0 0 2rem 0 $grey;
+      box-shadow: 0 0 2rem 0 $grey;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=20);
+      border-radius: 1rem;
+      width: 100%;
+      padding: 3rem 0;
+
+      .anchor {
+        width: 100%;
+        padding: 0 2rem;
+        flex-grow: 1;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:not(:last-child) {
+          border-right: .1rem solid $grey-dark;
+        }
+
+        .img-anchor {
+          width: 4.5rem;
+        }
+
+        .text-anchors {
+          margin-top: 1rem;
+          text-align: center;
+
+          .title-anchor {
+            font-size: 1.2rem;
+            font-weight: $bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 640px) {
+      .wrap-anchors {
+        max-width: 81rem;
+        margin: 5rem auto 5rem auto;
+
+        .anchor {
+          .img-anchor {
+            width: 10rem;
+          }
+
+          .text-anchors {
+            .title-anchor {
+              font-size: 1.8rem;
+            }
+
+            .btn {
+              opacity: 0;
+              @include btn($grey, $white);
+              transition: all .1s ease-in;
+            }
+          }
+
+          &:hover {
+            .btn {
+              margin-top: 2rem;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .wrap-anchors {
+        margin: 10rem auto 10rem auto;
+      }
+    }
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .wrap-overview {
+    height: calc(100vh - 12.5rem);
+    padding-top: 4rem;
+  }
+}
+
+.wrap-features {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 8rem;
+
+  .feature {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    margin: 2.5rem 0;
+
+    img {
+      width: 5rem;
+      margin-right: 4.5rem;
+    }
+
+    .text-feature {
+      line-height: 2rem;
+
+      .title-feature {
+        font-family: $title;
+        font-weight: $bold;
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .legend-feature {
+        line-height: 2.4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .wrap-features {
+    padding: 0 5rem;
+  }
+}
+
+@mixin title() {
+  font-size: 4rem;
+  font-weight: $bold;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+@mixin subtitle() {
+  font-family: $texte;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.wrap-presentation {
+  background-color: $grey-dark;
+  color: $white;
+
+  .head-presentation {
+    display: none;
+  }
+
+  @media (min-width: 640px) {
+    .head-presentation {
+      display: block;
+
+      .title-presentation {
+        font-size: 4.5rem;
+        font-weight: $bold;
+        line-height: 5rem;
+        margin-bottom: 5rem;
+      }
+
+      .text-presentation {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+
+        a {
+          color: $orange;
+
+        }
+      }
+    }
+  }
+
+  .content-presentation {
+    background-color: $grey;
+
+    > * {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      .title-presentation {
+        @include title();
+      }
+
+      .subtitle-presentation {
+        @include subtitle();
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .wrap-presentation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0;
+
+    > * {
+      flex-grow: 1;
+      width: 100%;
+      padding: 4rem 0;
+
+      > * {
+        max-width: calc(180rem / 2);
+
+        &:first-child {
+          margin: 0 0 0 auto;
+        }
+
+        &:last-child {
+          margin: 0 auto 0 0;
+        }
+      }
+    }
+
+    .head-presentation {
+      background-color: $grey-dark;
+    }
+  }
+}
+
+.wrap-service {
+  color: $white;
+
+  .content-service {
+    > * {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      .text-service {
+        text-align: center;
+
+        .title-service {
+          @include title();
+        }
+
+        .subtitle-service {
+          @include subtitle();
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .wrap-service {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > * {
+      width: 100%;
+
+      picture {
+        > * {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:first-child {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .container {
+          padding: 0;
+        }
+      }
+
+      &:last-child {
+        > * {
+          max-width: calc(180rem / 2);
+        }
+      }
+
+      &:last-child {
+        display: flex;
+        padding: 4rem 0;
+
+        .container {
+          margin: 0 auto 0 0;
+        }
+      }
+    }
+  }
+
+  #certification {
+    > * {
+      &:first-child {
+        background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/certification.jpg");
+      }
+    }
+  }
+
+  #formation {
+    > * {
+      &:first-child {
+        background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/formation.jpg");
+        order: 2;
+      }
+
+      &:last-child {
+        order: 1;
+
+        > * {
+          margin: 0 0 0 auto;
+        }
+      }
+    }
+  }
+
+  #check-list {
+    > * {
+      &:first-child {
+        background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/checklist.jpg");
+      }
+    }
+  }
+}
+
+#certification {
+  background-color: $blue;
+}
+
+#formation {
+  background-color: $orange;
+}
+
+#check-list {
+  background-color: $green;
+}
+
+.title-carousel {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.title-carousel {
+  @include title();
+}
+
+
+.owl-carousel {
+  .owl-wrapper-outer {
+    .owl-wrapper {
+      .owl-item {
+        .item {
+          text-align: center;
+
+          &:hover {
+            .owl-carousel-item-imgoverlay {
+              background: transparent;
+            }
+          }
+
+          img {
+            width: 15rem;
+            margin: 0 auto;
+          }
+
+          .owl-carousel-item-imgoverlay {
+            position: initial;
+            opacity: 1;
+            margin: 2rem 0;
+            text-shadow: none;
+
+            .owl-carousel-item-imgcontent {
+              margin-top: .5rem;
+
+              p {
+                letter-spacing: .1rem;
+                text-shadow: none;
+                font-size: 1.4rem;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .owl-controls {
+    .owl-pagination {
+      .owl-page {
+        > * {
+          background: $grey;
+        }
+      }
+    }
+  }
+}
+
+.wrap-team {
+  background-color: $grey-dark;
+  color: $white;
+}
+
+.wrap-team,
+.wrap-customer,
+.wrap-testimonial {
+  padding: 5rem 0;
+}
+
+.wrap-customer {
+  background-color: $white;
+
+  > * {
+    .owl-carousel-customers {
+      .owl-wrapper-outer {
+        .owl-wrapper {
+          .owl-item {
+            .item {
+              .owl-carousel-item-imgoverlay {
+                max-width: 100rem;
+                margin: 2rem auto 2rem auto;
+
+                .owl-carousel-item-imgtitle {
+                  display: none;
+                }
+
+                .owl-carousel-item-imgcontent {
+                  font-size: 1.8rem;
+                  line-height: 2rem;
+                  font-style: italic;
+
+                  p {
+                    color: $black;
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrap-testimonial {
+  background-color: $white;
+
+  > * {
+    .owl-carousel-testimonials {
+      .owl-wrapper-outer {
+        .owl-wrapper {
+          .owl-item {
+            .item {
+              > * {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                  margin: 0;
+                  margin: 0 5rem;
+                }
+
+                .owl-carousel-item-imgoverlay {
+                  max-width: 100rem;
+                  display: flex;
+                  flex-flow: column nowrap;
+
+
+                  .owl-carousel-item-imgtitle {
+                    order: 2;
+                    color: $black;
+                    text-align: left;
+                    margin-top: 2rem;
+                    font-size: 1.8rem;
+                  }
+
+                  .owl-carousel-item-imgcontent {
+                    order: 1;
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                    font-style: italic;
+
+                    p {
+                      color: $black;
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
