@@ -10,7 +10,7 @@
 
                     <div class="button-overview">
                         <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
-                        <a href="#" class="btn btn-primary btn-lg btn-inverse">Test gratuit</a>
+                        <a href="#" class="btn btn-primary btn-lg">Test gratuit</a>
                     </div>
                 </div>
 

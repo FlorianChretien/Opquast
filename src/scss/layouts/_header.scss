@@ -7,6 +7,7 @@
   left: 0;
 
   #bg-video {
+    background-color: $bg;
     background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/overview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +44,14 @@
       left: 0;
       object-fit: cover;
     }
+  }
+}
+
+.header-inverse {
+  background-color: $grey;
+
+  a {
+    color: $white;
   }
 }
 
