@@ -1,3 +1,7 @@
+<?php
+    global $post;
+    $post_slug=$post->post_name;
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -7,7 +11,6 @@
         <?php wp_enqueue_script("jquery"); ?>
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/jquery-3.3.1.min.js"></script>
         <?php wp_head(); ?>
-
     </head>
 <body>
 
@@ -20,7 +23,13 @@
         </div>
 
         <a href="<?php echo get_site_url() ?>" class="link-home">
-            <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">
+            <?php
+            if($post_slug == 'certification'){
+                echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
+            } else {
+                echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
+            }
+            ?>
         </a>
 
         <nav role="navigation" class="wrap-navigation">

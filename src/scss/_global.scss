@@ -47,16 +47,16 @@ table {
 }
 
  //Fonts icomoon
-/*@font-face {
+@font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?s5aglo');
-  src:  url('../fonts/icomoon.eot?s5aglo#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?s5aglo') format('truetype'),
-  url('../fonts/icomoon.woff?s5aglo') format('woff'),
-  url('../fonts/icomoon.svg?s5aglo#icomoon') format('svg');
+  src:  url('../../dist/fonts/icomoon.eot');
+  src:  url('../../dist/fonts/icomoon.eot') format('embedded-opentype'),
+  url('../../dist/fonts/icomoon.ttf') format('truetype'),
+  url('../../dist/fonts/icomoon.woff') format('woff'),
+  url('../../dist/fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
-}*/
+}
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -119,6 +119,7 @@ h5,
 h6 {
   font-family: $title;
   letter-spacing: .1rem;
+  font-family: 'icomoon';
 }
 
 h1 {

@@ -58,16 +58,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*@font-face {
+@font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?s5aglo');
-  src:  url('../fonts/icomoon.eot?s5aglo#iefix') format('embedded-opentype'),
-  url('../fonts/icomoon.ttf?s5aglo') format('truetype'),
-  url('../fonts/icomoon.woff?s5aglo') format('woff'),
-  url('../fonts/icomoon.svg?s5aglo#icomoon') format('svg');
+  src: url(fonts/icomoon.eot);
+  src: url(fonts/icomoon.eot) format("embedded-opentype"), url(fonts/icomoon.ttf) format("truetype"), url(fonts/icomoon.woff) format("woff"), url(fonts/icomoon.svg) format("svg");
   font-weight: normal;
-  font-style: normal;
-}*/
+  font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -118,7 +115,8 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem;
+  font-family: 'icomoon'; }
 
 h1 {
   font-size: 6rem;
@@ -1046,3 +1044,78 @@ input {
         text-transform: uppercase; }
       #page-login section:last-child h3 {
         font-size: 2em; }
+
+header {
+  background-color: #4e5966;
+  color: #fff; }
+
+#page-certification section {
+  background-color: #4e5966;
+  color: #fff;
+  padding: 4.6em;
+  padding-top: 8%;
+  min-height: 600px; }
+  #page-certification section .container {
+    width: 70%;
+    padding: 0;
+    margin: 0; }
+    #page-certification section .container span.blue {
+      color: #a0d8f1; }
+    #page-certification section .container p {
+      margin: 2em 0;
+      line-height: 1.4em; }
+    #page-certification section .container .container-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      #page-certification section .container .container-button button {
+        border: 0;
+        font-size: 1.3rem; }
+        #page-certification section .container .container-button button:hover {
+          background-color: #fff; }
+  #page-certification section:last-child {
+    background-color: #a0d8f1; }
+    #page-certification section:last-child h2 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 4rem; }
+      #page-certification section:last-child h2 span.grey-black {
+        color: #323b44; }
+    #page-certification section:last-child p {
+      margin: 3em 6em;
+      line-height: 1.4em;
+      text-align: center; }
+      #page-certification section:last-child p:first-of-type {
+        margin-top: 5em; }
+    #page-certification section:last-child .container-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      #page-certification section:last-child .container-card div {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        #page-certification section:last-child .container-card div img {
+          width: 76px;
+          height: 76px; }
+        #page-certification section:last-child .container-card div article {
+          width: 100%; }
+          #page-certification section:last-child .container-card div article h4 {
+            width: 100%; }
+          #page-certification section:last-child .container-card div article p {
+            width: 100%;
+            margin: 0; }
