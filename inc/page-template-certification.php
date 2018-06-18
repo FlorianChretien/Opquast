@@ -1,5 +1,5 @@
 <!--
-    Template Name: Certification
+    Template Name: Certification Pro
 -->
 <?php get_header('opquast'); ?>
 
@@ -36,32 +36,28 @@
                 <img src="http://via.placeholder.com/76x76" alt="">
                 <article>
                     <h4>Le Lorem Ipsum #1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue. Aliquam vel tortor massa.
-                        Nam eget condimentum tellus, consectetur cursus mi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
                 </article>
             </div>
             <div>
                 <img src="http://via.placeholder.com/76x76" alt="">
                 <article>
                     <h4>Le Lorem Ipsum #2</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue. Aliquam vel tortor massa.
-                        Nam eget condimentum tellus, consectetur cursus mi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
                 </article>
             </div>
             <div>
                 <img src="http://via.placeholder.com/76x76" alt="">
                 <article>
                     <h4>Le Lorem Ipsum #3</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue. Aliquam vel tortor massa.
-                        Nam eget condimentum tellus, consectetur cursus mi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
                 </article>
             </div>
             <div>
                 <img src="http://via.placeholder.com/76x76" alt="">
                 <article>
                     <h4>Le Lorem Ipsum #4</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue. Aliquam vel tortor massa.
-                        Nam eget condimentum tellus, consectetur cursus mi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
                 </article>
             </div>
         </div>

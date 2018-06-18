@@ -212,6 +212,78 @@ img {
     font-size: 1.2rem;
     padding: 1.5rem 2rem 1rem 2rem; }
 
+.wrap-footer {
+  background-color: #323b44;
+  color: #fff; }
+  .wrap-footer > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .wrap-footer > * .link-home .img-logo {
+      width: 10rem; }
+    .wrap-footer > * .wrap-navigation {
+      display: none; }
+    .wrap-footer > * .wrap-social .social-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .wrap-footer > * .wrap-social .social-list .item-social {
+        margin: 0 .5rem; }
+        .wrap-footer > * .wrap-social .social-list .item-social .link-social .img-social {
+          width: 1.5rem; }
+  @media (min-width: 640px) {
+    .wrap-footer > * {
+      padding: 4rem 7rem;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .wrap-footer > * > * {
+        margin: 1rem; }
+      .wrap-footer > * .link-home .img-logo {
+        width: 20rem; }
+      .wrap-footer > * .wrap-navigation {
+        display: block; }
+        .wrap-footer > * .wrap-navigation .menu ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap; }
+          .wrap-footer > * .wrap-navigation .menu ul > * {
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            margin: 0 1rem;
+            text-transform: uppercase; }
+            .wrap-footer > * .wrap-navigation .menu ul > * a {
+              color: #fff; }
+              .wrap-footer > * .wrap-navigation .menu ul > * a a:hover,
+              .wrap-footer > * .wrap-navigation .menu ul > * a a:focus,
+              .wrap-footer > * .wrap-navigation .menu ul > * a a:active {
+                font-weight: 700; }
+      .wrap-footer > * .wrap-social .social-list .item-social {
+        margin: 0 1rem; }
+        .wrap-footer > * .wrap-social .social-list .item-social .link-social .img-social {
+          width: 4rem; } }
+
 .header {
   overflow: hidden;
   position: relative;
@@ -725,77 +797,81 @@ img {
         margin-left: auto;
         font-size: 1.4rem; }
 
-.wrap-footer {
-  background-color: #323b44;
+header {
+  background-color: #4e5966;
   color: #fff; }
-  .wrap-footer > * {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .wrap-footer > * .link-home .img-logo {
-      width: 10rem; }
-    .wrap-footer > * .wrap-navigation {
-      display: none; }
-    .wrap-footer > * .wrap-social .social-list {
+
+#page-certification section {
+  background-color: #4e5966;
+  color: #fff;
+  padding: 4.6em;
+  padding-top: 8%;
+  min-height: 600px; }
+  #page-certification section .container {
+    width: 70%;
+    padding: 0;
+    margin: 0; }
+    #page-certification section .container span.blue {
+      color: #a0d8f1; }
+    #page-certification section .container p {
+      margin: 2em 0;
+      line-height: 1.4em; }
+    #page-certification section .container .container-button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap; }
-      .wrap-footer > * .wrap-social .social-list .item-social {
-        margin: 0 .5rem; }
-        .wrap-footer > * .wrap-social .social-list .item-social .link-social .img-social {
-          width: 1.5rem; }
-  @media (min-width: 640px) {
-    .wrap-footer > * {
-      padding: 4rem 7rem;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
-      .wrap-footer > * > * {
-        margin: 1rem; }
-      .wrap-footer > * .link-home .img-logo {
-        width: 20rem; }
-      .wrap-footer > * .wrap-navigation {
-        display: block; }
-        .wrap-footer > * .wrap-navigation .menu ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-flow: row wrap;
-                  flex-flow: row wrap; }
-          .wrap-footer > * .wrap-navigation .menu ul > * {
-            font-family: "Raleway", Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            margin: 0 1rem;
-            text-transform: uppercase; }
-            .wrap-footer > * .wrap-navigation .menu ul > * a {
-              color: #fff; }
-              .wrap-footer > * .wrap-navigation .menu ul > * a a:hover,
-              .wrap-footer > * .wrap-navigation .menu ul > * a a:focus,
-              .wrap-footer > * .wrap-navigation .menu ul > * a a:active {
-                font-weight: 700; }
-      .wrap-footer > * .wrap-social .social-list .item-social {
-        margin: 0 1rem; }
-        .wrap-footer > * .wrap-social .social-list .item-social .link-social .img-social {
-          width: 4rem; } }
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      #page-certification section .container .container-button button {
+        border: 0;
+        font-size: 1.3rem; }
+        #page-certification section .container .container-button button:hover {
+          background-color: #fff; }
+  #page-certification section:last-child {
+    background-color: #a0d8f1; }
+    #page-certification section:last-child h2 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 4rem; }
+      #page-certification section:last-child h2 span.grey-black {
+        color: #323b44; }
+    #page-certification section:last-child p {
+      margin: 3em 6em;
+      line-height: 1.4em;
+      text-align: center; }
+      #page-certification section:last-child p:first-of-type {
+        margin-top: 5em; }
+    #page-certification section:last-child .container-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      #page-certification section:last-child .container-card div {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        width: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        #page-certification section:last-child .container-card div img {
+          width: 76px;
+          height: 76px; }
+        #page-certification section:last-child .container-card div article {
+          width: 90%;
+          text-align: left; }
+          #page-certification section:last-child .container-card div article h4 {
+            width: 100%; }
+          #page-certification section:last-child .container-card div article p {
+            width: 100%;
+            margin: 0; }
 
 .wrap-overview {
   padding-top: 5rem;
