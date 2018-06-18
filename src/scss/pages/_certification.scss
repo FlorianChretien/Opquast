@@ -8,7 +8,7 @@ header{
     background-color: $grey;
     color: $white;
     padding: 4.6em;
-    padding-top:8%;
+    padding-top:4%;
     min-height: 600px;
 
     .container{
@@ -20,7 +20,9 @@ header{
 
       p{
         margin: 2em 0;
+        margin-bottom: 0.2em;
         line-height: 1.4em;
+        font-size: 1.3em;
       }
 
       .container-button{
@@ -37,7 +39,7 @@ header{
         }
       }
     }
-    &:last-child{
+    &:nth-child(2){
       background-color: $blue;
 
       h2{
@@ -45,9 +47,7 @@ header{
         font-weight: bold;
         font-size: 4rem;
 
-        span.grey-black{
-          color: $grey-dark;
-        }
+        span.grey-black{ color: $grey-dark; }
       }
 
       p{
@@ -59,32 +59,69 @@ header{
       }
 
       .container-card{
+        max-width: 890px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
 
         div{
           flex-grow: 1;
           width:50%;
+          margin: 4% 0%;
           display: flex;
           flex-direction: row;
 
-          img{
-            width: 76px;
+          div{
+            width:76px;
             height: 76px;
+            margin: 0;
           }
+
           article{
+            padding-left: 6%;
+            padding-right: 3%;
             width: 90%;
-            text-align: left;
+
             h4{
               width: 100%;
+              font-size: 1.5em;
+              font-weight: 600;
             }
             p{
+              font-size: 0.9em;
+              text-align: left;
               width: 100%;
               margin: 0;
+              padding-top: 4%;
             }
           }
         }
+
+        button{
+          margin: 0 auto;
+          margin-top: 6%;
+          border: 0;
+          padding: 1.5rem 4.5rem 1.5rem 4.5rem;
+          font-size: 1.3rem;
+
+          &:hover{
+            background-color: $white;
+          }
+        }
       }
+    }
+    &:nth-child(3){
+      background-color: $white;
+
+      span.grey-black{ color: $orange; }
+    }
+  }
+
+  .wrap-icon{
+    border: 0.2rem solid #fff;
+    padding: 1.5rem;
+    .icon-feature{
+      font-size: 4rem;
     }
   }
 }

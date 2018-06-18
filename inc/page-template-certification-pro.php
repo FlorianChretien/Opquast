@@ -15,12 +15,12 @@
             </p>
             <div class="container-button">
                 <button class="btn btn-primary btn-md">S'inscrire à la certification</button>
-                <button class="btn btn-primary btn-md">Qu'est ce qui est inclus ?</button>
+                <button class="btn btn-primary btn-md">Découvrir nos formations</button>
             </div>
         </div>
     </section>
     <section>
-        <h2><span class="grey-black">Passez la certification et</span><br/> boostez vos compétences</h2>
+        <h2><span class="grey-black">Une certification</span><br/> pour les pro</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue. Aliquam vel tortor massa.
             Nam eget condimentum tellus, consectetur cursus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
@@ -33,37 +33,134 @@
         </p>
         <div class="container-card">
             <div>
-                <img src="http://via.placeholder.com/76x76" alt="">
+                <div class="wrap-icon">
+                    <span class="icon-experts icon-feature"></span>
+                </div>
                 <article>
                     <h4>Le Lorem Ipsum #1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
                 </article>
             </div>
             <div>
-                <img src="http://via.placeholder.com/76x76" alt="">
+                <div class="wrap-icon">
+                    <span class="icon-experts icon-feature"></span>
+                </div>
                 <article>
                     <h4>Le Lorem Ipsum #2</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
                 </article>
             </div>
             <div>
-                <img src="http://via.placeholder.com/76x76" alt="">
+                <div class="wrap-icon">
+                    <span class="icon-experts icon-feature"></span>
+                </div>
                 <article>
                     <h4>Le Lorem Ipsum #3</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
                 </article>
             </div>
             <div>
-                <img src="http://via.placeholder.com/76x76" alt="">
+                <div class="wrap-icon">
+                    <span class="icon-experts icon-feature"></span>
+                </div>
                 <article>
                     <h4>Le Lorem Ipsum #4</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
                 </article>
             </div>
+            <button class="btn btn-primary btn-md">S'inscrire</button>
         </div>
-        <button>
-            S'inscrire
-        </button>
+    </section>
+    <section>
+        <h2><span class="red">Une certification</span><br/> pour les pro</h2>
+        <div>
+            <h3>Sensibilisation qualité web</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+            <div class="container-card">
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <button class="btn btn-primary btn-md">S'inscrire</button>
+            </div>
+            <button class="btn btn-primary btn-md">S'inscrire</button>
+        </div>
+        <div>
+            <h3>Sensibilisation qualité web</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+            <div class="container-card">
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <div>
+                    <div class="wrap-icon">
+                        <span class="icon-experts icon-feature"></span>
+                    </div>
+                    <article>
+                        <h4>Le Lorem Ipsum #4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula.</p>
+                    </article>
+                </div>
+                <button class="btn btn-primary btn-md">S'inscrire</button>
+            </div>
+            <button class="btn btn-primary btn-md">S'inscrire</button>
+        </div>
     </section>
 </div>
 

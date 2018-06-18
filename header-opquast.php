@@ -16,7 +16,7 @@
         <div class="header">
         <?php
         switch ($post_slug){
-            case '':
+            case 'accueil':
                 echo ' <video autoplay loop muted id="bg-video">
                         <source src="'.get_site_url().'/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
                        </video>';
@@ -30,10 +30,11 @@
                     <?php
                     switch ($post_slug){
                         case 'certification':
-                        case 'certification-pro':
+                        case 'certification-particulier':
+                        case 'certification-professionnels':
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
-                        case '':
+                        case 'accueil':
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
                     }
