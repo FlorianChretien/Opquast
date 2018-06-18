@@ -22,7 +22,7 @@
             <div class="container">
                 <a href="<?php echo get_site_url() ?>" class="brand">
                     <?php
-                    if($post_slug == 'certification'){
+                    if($post_slug == 'certification') {
                         echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
                     } else {
                         echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
