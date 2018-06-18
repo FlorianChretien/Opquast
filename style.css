@@ -68,8 +68,8 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url(dist/fonts/icomoon.eot);
-  src: url(dist/fonts/icomoon.eot) format("embedded-opentype"), url(dist/fonts/icomoon.ttf) format("truetype"), url(dist/fonts/icomoon.woff) format("woff"), url(dist/fonts/icomoon.svg) format("svg");
+  src: url(fonts/icomoon.eot);
+  src: url(fonts/icomoon.eot) format("embedded-opentype"), url(fonts/icomoon.ttf) format("truetype"), url(fonts/icomoon.woff) format("woff"), url(fonts/icomoon.svg) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -256,12 +256,9 @@ img {
     font-size: 1.2rem;
     padding: 1.5rem 2rem 1rem 2rem; }
 
-<<<<<<< HEAD
-=======
 .color-blue {
   color: #a0d8f1; }
 
->>>>>>> a34819453755796a119b0eb79ccf5e1a299b840b
 .wrap-icon {
   margin-right: 4.5rem;
   border-radius: 50%;
@@ -957,6 +954,8 @@ header {
           background-color: #fff; }
   #page-certification section:nth-child(3) {
     background-color: #fff; }
+    #page-certification section:nth-child(3) span.grey-black {
+      color: #ec6359; }
 
 #page-certification .wrap-icon {
   border: 0.2rem solid #fff;
