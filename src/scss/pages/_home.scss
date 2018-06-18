@@ -51,11 +51,11 @@
       flex-flow: row nowrap;
       justify-content: center;
       background-color: $white;
-      -moz-box-shadow: 0 0 2rem 0 $grey;
-      -webkit-box-shadow: 0 0 2rem 0 $grey;
-      -o-box-shadow: 0 0 2rem 0 $grey;
-      box-shadow: 0 0 2rem 0 $grey;
-      filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=20);
+      -moz-box-shadow: 0 0 1rem 0 $grey;
+      -webkit-box-shadow: 0 0 1rem 0 $grey;
+      -o-box-shadow: 0 0 1rem 0 $grey;
+      box-shadow: 0 0 1rem 0 $grey;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=10);
       border-radius: 1rem;
       width: 100%;
       padding: 3rem 0;

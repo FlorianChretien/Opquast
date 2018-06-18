@@ -231,7 +231,10 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; }
+    z-index: -1;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */ }
   @media (min-aspect-ratio: 16 / 9) {
     .header #bg-video {
       height: 300%;
@@ -911,10 +914,10 @@ img {
           -ms-flex-pack: center;
               justify-content: center;
       background-color: #fff;
-      -webkit-box-shadow: 0 0 2rem 0 #4e5966;
-      -o-box-shadow: 0 0 2rem 0 #4e5966;
-      box-shadow: 0 0 2rem 0 #4e5966;
-      filter: progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=20);
+      -webkit-box-shadow: 0 0 1rem 0 #4e5966;
+      -o-box-shadow: 0 0 1rem 0 #4e5966;
+      box-shadow: 0 0 1rem 0 #4e5966;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=10);
       border-radius: 1rem;
       width: 100%;
       padding: 3rem 0; }
