@@ -13,10 +13,14 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <div class="header">
+        <div class="header <?php if($post_slug != "bonjour-tout-le-monde") echo 'header-inverse'; ?>">
         <?php
         switch ($post_slug){
+<<<<<<< HEAD
             case 'accueil':
+=======
+            case 'bonjour-tout-le-monde':
+>>>>>>> a34819453755796a119b0eb79ccf5e1a299b840b
                 echo ' <video autoplay loop muted id="bg-video">
                         <source src="'.get_site_url().'/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
                        </video>';
@@ -29,9 +33,16 @@
                 <a href="<?php echo get_site_url() ?>" class="brand">
                     <?php
                     switch ($post_slug){
+<<<<<<< HEAD
                         case 'certification':
                         case 'certification-particulier':
                         case 'certification-professionnels':
+=======
+                        case 'certification-2':
+                            echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline_blue.png' alt='Logotype Opquast' class='img-logo'>";
+                            break;
+                        case 'certification-pro':
+>>>>>>> a34819453755796a119b0eb79ccf5e1a299b840b
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
                         case 'accueil':

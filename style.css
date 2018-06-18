@@ -68,8 +68,8 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url(fonts/icomoon.eot);
-  src: url(fonts/icomoon.eot) format("embedded-opentype"), url(fonts/icomoon.ttf) format("truetype"), url(fonts/icomoon.woff) format("woff"), url(fonts/icomoon.svg) format("svg");
+  src: url(dist/fonts/icomoon.eot);
+  src: url(dist/fonts/icomoon.eot) format("embedded-opentype"), url(dist/fonts/icomoon.ttf) format("truetype"), url(dist/fonts/icomoon.woff) format("woff"), url(dist/fonts/icomoon.svg) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -101,10 +101,10 @@ table {
 .icon-experience:before {
   content: "\E904"; }
 
-.icon-experts:before {
+.icon-expertise:before {
   content: "\E905"; }
 
-.icon-expertise:before {
+.icon-experts:before {
   content: "\E906"; }
 
 .icon-formations:before {
@@ -113,23 +113,32 @@ table {
 .icon-free:before {
   content: "\E908"; }
 
-.icon-match:before {
+.icon-independent:before {
   content: "\E909"; }
 
-.icon-partners:before {
+.icon-match:before {
   content: "\E90A"; }
 
-.icon-recognition:before {
+.icon-partners:before {
   content: "\E90B"; }
 
-.icon-result:before {
+.icon-professional:before {
   content: "\E90C"; }
 
-.icon-trainers:before {
+.icon-recognition:before {
   content: "\E90D"; }
 
-.icon-trainings:before {
+.icon-result:before {
   content: "\E90E"; }
+
+.icon-school:before {
+  content: "\E90F"; }
+
+.icon-trainers:before {
+  content: "\E910"; }
+
+.icon-trainings:before {
+  content: "\E911"; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -145,8 +154,7 @@ html {
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  color: #333331;
-  background-color: #e8eff7; }
+  color: #333331; }
 
 h1,
 h2,
@@ -248,6 +256,12 @@ img {
     font-size: 1.2rem;
     padding: 1.5rem 2rem 1rem 2rem; }
 
+<<<<<<< HEAD
+=======
+.color-blue {
+  color: #a0d8f1; }
+
+>>>>>>> a34819453755796a119b0eb79ccf5e1a299b840b
 .wrap-icon {
   margin-right: 4.5rem;
   border-radius: 50%;
@@ -336,6 +350,7 @@ img {
   bottom: 0;
   left: 0; }
   .header #bg-video {
+    background-color: #e8eff7;
     background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/overview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -364,6 +379,11 @@ img {
       left: 0;
       -o-object-fit: cover;
          object-fit: cover; } }
+
+.header-inverse {
+  background-color: #4e5966; }
+  .header-inverse a {
+    color: #fff; }
 
 .wrap-header .container {
   padding: 1rem 2rem;
@@ -842,7 +862,6 @@ img {
         font-size: 1.4rem; }
 
 header {
-  background-color: #4e5966;
   color: #fff; }
 
 #page-certification section {
@@ -944,6 +963,50 @@ header {
   padding: 1.5rem; }
   #page-certification .wrap-icon .icon-feature {
     font-size: 4rem; }
+
+.internal-page {
+  height: auto !important; }
+  .internal-page .head-overview .text-overview {
+    color: #fff; }
+    .internal-page .head-overview .text-overview .title-overview {
+      text-transform: uppercase; }
+  .internal-page .wrap-anchors .anchor .img-anchor {
+    color: #4e5966 !important; }
+
+.wrap-target {
+  padding: 5rem 0; }
+  .wrap-target:nth-of-type(odd) {
+    background-color: #a0d8f1;
+    color: #fff; }
+  .wrap-target > * {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .wrap-target > * > * {
+      margin: 2rem 0; }
+    .wrap-target > * .title-target {
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 6rem; }
+    .wrap-target > * .icon-target {
+      font-size: 15rem; }
+    .wrap-target > * .text-target {
+      max-width: 100rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem; }
 
 .wrap-overview {
   padding-top: 5rem;
@@ -1221,13 +1284,6 @@ header {
         -ms-flex-align: start;
             align-items: start;
     margin: 2.5rem 0; }
-    .wrap-features .feature .wrap-icon {
-      margin-right: 4.5rem;
-      border-radius: 50%;
-      border: 0.5rem solid #fff;
-      padding: 2.5rem; }
-      .wrap-features .feature .wrap-icon .icon-feature {
-        font-size: 5rem; }
     .wrap-features .feature .text-feature {
       line-height: 2rem; }
       .wrap-features .feature .text-feature .title-feature {

@@ -1,5 +1,4 @@
 header{
-  background-color: $grey;
   color: $white;
 }
 
@@ -122,6 +121,64 @@ header{
     padding: 1.5rem;
     .icon-feature{
       font-size: 4rem;
+    }
+  }
+}
+
+
+// Page certification
+.internal-page {
+  height: auto !important;
+
+  .head-overview {
+    .text-overview {
+      color: $white;
+
+      .title-overview {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .wrap-anchors {
+    .anchor {
+      .img-anchor {
+        color: $grey !important;
+      }
+    }
+  }
+}
+
+.wrap-target {
+  padding: 5rem 0;
+
+  &:nth-of-type(odd) {
+    background-color: $blue;
+    color: $white;
+  }
+
+  > * {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+      margin: 2rem 0;
+    }
+
+    .title-target {
+      @include title();
+    }
+
+    .icon-target {
+      font-size: 15rem;
+    }
+
+    .text-target {
+      max-width: 100rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
     }
   }
 }

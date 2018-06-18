@@ -180,17 +180,6 @@
     align-items: start;
     margin: 2.5rem 0;
 
-    .wrap-icon {
-      margin-right: 4.5rem;
-      border-radius: 50%;
-      border: 0.5rem solid #fff;
-      padding: 2.5rem;
-
-      .icon-feature {
-        font-size: 5rem;
-      }
-    }
-
     .text-feature {
       line-height: 2rem;
 
@@ -213,15 +202,6 @@
   .wrap-features {
     padding: 0 5rem;
   }
-}
-
-@mixin title() {
-  font-size: 4rem;
-  font-weight: $bold;
-  letter-spacing: .2rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 6rem;
 }
 
 @mixin subtitle() {
