@@ -195,3 +195,15 @@ img {
 .btn {
   @include btn($grey-dark, $white);
 }
+
+
+.wrap-icon {
+  margin-right: 4.5rem;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  padding: 2.5rem;
+
+  .icon-feature {
+    font-size: 5rem;
+  }
+}
