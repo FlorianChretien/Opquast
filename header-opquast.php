@@ -32,6 +32,7 @@
                         case 'certification':
                         case 'certification-particulier':
                         case 'certification-professionnels':
+                        case 'certification-ecole':
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline_blue.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
                         case 'certification-2':
