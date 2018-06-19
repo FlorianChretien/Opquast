@@ -12,7 +12,7 @@
   position: relative;
   z-index: 1;
   border-radius: 1rem;
-  border-color: $color;
+  //border-color: $color;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
   background: $color;
@@ -60,17 +60,22 @@
     background: transparent;
     border: .2rem solid $color;
     color: $color;
+    padding: 1.8rem 2.3rem 1.3rem 2.3rem;
 
     &:before {
       background: $color;
-      //border: none;
+      -moz-box-shadow: 0 0 .5rem 0 $grey-dark;
+      -webkit-box-shadow: 0 0 .5rem 0 $grey-dark;
+      -o-box-shadow: 0 0 .5rem 0 $grey-dark;
+      box-shadow: 0 0 .5rem 0 $grey-dark;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey-dark, Direction=NaN, Strength=5);
     }
 
     &:hover,
     &:focus,
     &:active {
       color: $txt;
-      //border: none;
+      border: none;
     }
   }
 

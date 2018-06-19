@@ -13,7 +13,7 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <div class="header <?php if($post_slug != "bonjour-tout-le-monde") echo 'header-inverse'; ?>">
+        <div class="header <?php if($post_slug != "accueil") echo 'header-inverse'; ?>">
         <?php
         switch ($post_slug){
             case 'accueil':

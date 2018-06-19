@@ -85,47 +85,62 @@ table {
 .icon-criteria:before {
   content: "\e903";
 }
-.icon-experience:before {
+.icon-duration:before {
   content: "\e904";
 }
-.icon-expertise:before {
+.icon-experience:before {
   content: "\e905";
 }
-.icon-experts:before {
+.icon-expertise:before {
   content: "\e906";
 }
-.icon-formations:before {
+.icon-experts:before {
   content: "\e907";
 }
-.icon-free:before {
+.icon-formations:before {
   content: "\e908";
 }
-.icon-independent:before {
+.icon-free:before {
   content: "\e909";
 }
-.icon-match:before {
+.icon-goal:before {
   content: "\e90a";
 }
-.icon-partners:before {
+.icon-independent:before {
   content: "\e90b";
 }
-.icon-professional:before {
+.icon-match:before {
   content: "\e90c";
 }
-.icon-recognition:before {
+.icon-partners:before {
   content: "\e90d";
 }
-.icon-result:before {
+.icon-place:before {
   content: "\e90e";
 }
-.icon-school:before {
+.icon-price:before {
   content: "\e90f";
 }
-.icon-trainers:before {
+.icon-professional:before {
   content: "\e910";
 }
-.icon-trainings:before {
+.icon-recognition:before {
   content: "\e911";
+}
+.icon-result:before {
+  content: "\e912";
+}
+.icon-school:before {
+  content: "\e913";
+}
+.icon-target:before {
+  content: "\e914";
+}
+.icon-trainers:before {
+  content: "\e915";
+}
+.icon-trainings:before {
+  content: "\e916";
 }
 
 
@@ -204,9 +219,19 @@ img {
   @include btn($grey-dark, $white);
 }
 
+
+.color-orange {
+  color: $orange;
+}
+
 .color-blue {
   color: $blue;
 }
+
+.color-green {
+  color: $green;
+}
+
 
 .wrap-icon {
   margin-right: 4.5rem;
