@@ -262,7 +262,9 @@ img {
     background: transparent;
     border: 0.2rem solid #323b44;
     color: #323b44;
-    padding: 1.8rem 2.3rem 1.3rem 2.3rem; }
+    padding: 1.8rem 2.3rem 1.3rem 2.3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
     .btn.btn-inverse:before {
       background: #323b44;
       -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
@@ -288,10 +290,10 @@ img {
 .wrap-icon {
   margin-right: 4.5rem;
   border-radius: 50%;
-  border: 0.5rem solid #fff;
-  padding: 2.5rem; }
+  border: .4rem solid #fff;
+  padding: 1.5rem; }
   .wrap-icon .icon-feature {
-    font-size: 5rem; }
+    font-size: 3.5rem; }
 
 .wrap-footer {
   background-color: #323b44;
@@ -809,7 +811,7 @@ img {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
-        .wrap-header .container .wrap-links .primary-nav ul.menu {
+        .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -817,12 +819,12 @@ img {
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row; }
-          .wrap-header .container .wrap-links .primary-nav ul.menu li {
+          .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li {
             margin: 0 1rem;
             letter-spacing: .1rem; }
-            .wrap-header .container .wrap-links .primary-nav ul.menu li a:hover,
-            .wrap-header .container .wrap-links .primary-nav ul.menu li a:focus,
-            .wrap-header .container .wrap-links .primary-nav ul.menu li a:active {
+            .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li a:hover,
+            .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li a:focus,
+            .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li a:active {
               font-weight: 700; }
       .wrap-header .container .wrap-links .link-login {
         -webkit-box-ordinal-group: 3;
@@ -1179,7 +1181,9 @@ header {
           background: transparent;
           border: 0.2rem solid #ec6359;
           color: #ec6359;
-          padding: 1.8rem 2.3rem 1.3rem 2.3rem; }
+          padding: 1.8rem 2.3rem 1.3rem 2.3rem;
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
           .wrap-overview .container .head-overview .button-overview .btn.btn-inverse:before {
             background: #ec6359;
             -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
@@ -1322,7 +1326,9 @@ header {
             background: transparent;
             border: 0.2rem solid #4e5966;
             color: #4e5966;
-            padding: 1.8rem 2.3rem 1.3rem 2.3rem; }
+            padding: 1.8rem 2.3rem 1.3rem 2.3rem;
+            -webkit-box-shadow: none;
+                    box-shadow: none; }
             .wrap-overview .container .wrap-anchors .anchor .text-anchors .btn.btn-inverse:before {
               background: #4e5966;
               -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
@@ -1363,7 +1369,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin-bottom: 8rem; }
+  margin-bottom: 3rem; }
   .wrap-features .feature {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1375,7 +1381,7 @@ header {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin: 2.5rem 0; }
+    margin: 2rem 0; }
     .wrap-features .feature .text-feature {
       line-height: 2rem; }
       .wrap-features .feature .text-feature .title-feature {
@@ -1431,14 +1437,14 @@ header {
         letter-spacing: .2rem;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 6rem; }
+        margin-bottom: 3rem; }
       .wrap-presentation .content-presentation > * .subtitle-presentation {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: 1.8rem;
         line-height: 2.5rem;
         letter-spacing: .1rem;
         text-align: center;
-        margin-bottom: 7rem; }
+        margin-bottom: 4rem; }
 
 @media (min-width: 640px) {
   .wrap-presentation {
@@ -1492,14 +1498,14 @@ header {
         letter-spacing: .2rem;
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 6rem; }
+        margin-bottom: 3rem; }
       .wrap-service .content-service > * .text-service .subtitle-service {
         font-family: "Open Sans", Arial, Helvetica, sans-serif;
         font-size: 1.8rem;
         line-height: 2.5rem;
         letter-spacing: .1rem;
         text-align: center;
-        margin-bottom: 7rem; }
+        margin-bottom: 4rem; }
 
 @media (min-width: 640px) {
   .wrap-service {
@@ -1512,6 +1518,8 @@ header {
             flex-flow: row nowrap; }
     .wrap-service > * {
       width: 100%; }
+      .wrap-service > * .container {
+        padding: 3rem; }
       .wrap-service > * picture > * {
         height: 100%;
         -o-object-fit: cover;
@@ -1567,7 +1575,7 @@ header {
   letter-spacing: .2rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 6rem; }
+  margin-bottom: 3rem; }
 
 .owl-carousel .owl-wrapper-outer .owl-wrapper .owl-item .item {
   text-align: center; }
@@ -1771,7 +1779,9 @@ header {
       background: transparent;
       border: 0.2rem solid #323b44;
       color: #323b44;
-      padding: 1.8rem 2.3rem 1.3rem 2.3rem; }
+      padding: 1.8rem 2.3rem 1.3rem 2.3rem;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
       .wrap-overview.internal-page .container .head-overview .button-overview .btn.btn-inverse:before {
         background: #323b44;
         -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
@@ -1891,7 +1901,7 @@ header {
       letter-spacing: .2rem;
       text-transform: uppercase;
       text-align: center;
-      margin-bottom: 6rem; }
+      margin-bottom: 3rem; }
     .wrap-target > * .icon-target {
       font-size: 15rem; }
     .wrap-target > * .text-target {

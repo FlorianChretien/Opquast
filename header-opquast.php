@@ -47,7 +47,7 @@
 
                 <div class="wrap-links">
                     <nav role="navigation" class="primary-nav">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
                     </nav>
 
                     <a href="<?php echo get_site_url() ?>/login/" class="link-login btn btn-primary">Connexion</a>

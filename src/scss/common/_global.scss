@@ -236,11 +236,11 @@ img {
 .wrap-icon {
   margin-right: 4.5rem;
   border-radius: 50%;
-  border: 0.5rem solid #fff;
-  padding: 2.5rem;
+  border: .4rem solid #fff;
+  padding: 1.5rem;
 
   .icon-feature {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -250,5 +250,14 @@ img {
   letter-spacing: .2rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
+}
+
+@mixin subtitle() {
+  font-family: $texte;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  margin-bottom: 4rem;
 }
