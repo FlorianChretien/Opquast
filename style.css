@@ -925,15 +925,20 @@ header {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row; }
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
         #page-certification section:nth-child(2) .container-card div div {
           width: 76px;
           height: 76px;
+          max-width: 76px;
+          max-height: 76px;
           margin: 0; }
         #page-certification section:nth-child(2) .container-card div article {
           padding-left: 6%;
           padding-right: 3%;
-          width: 90%; }
+          width: 75%; }
           #page-certification section:nth-child(2) .container-card div article h4 {
             width: 100%;
             font-size: 1.5em;
@@ -954,8 +959,93 @@ header {
           background-color: #fff; }
   #page-certification section:nth-child(3) {
     background-color: #fff; }
-    #page-certification section:nth-child(3) span.grey-black {
+    #page-certification section:nth-child(3) span.orange {
       color: #ec6359; }
+    #page-certification section:nth-child(3) h2 {
+      font-weight: bold;
+      font-size: 4rem;
+      text-align: center;
+      color: #323b44; }
+    #page-certification section:nth-child(3) h3 {
+      font-weight: bold;
+      font-size: 3rem;
+      color: #ec6359; }
+    #page-certification section:nth-child(3) h4, #page-certification section:nth-child(3) p {
+      color: #323b44; }
+    #page-certification section:nth-child(3) div.container-global {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin-top: 6%; }
+      #page-certification section:nth-child(3) div.container-global div.container {
+        width: 50%;
+        padding: 0;
+        padding-right: 8em; }
+        #page-certification section:nth-child(3) div.container-global div.container:last-child {
+          border-left: 2px solid #323b44;
+          padding-right: 0;
+          padding-left: 8em; }
+      #page-certification section:nth-child(3) div.container-global button {
+        margin: 0 auto;
+        margin-top: 6%;
+        border: 0px;
+        padding: 1.5rem 4.5rem 1.5rem 4.5rem;
+        font-size: 1.3rem;
+        background-color: #ec6359; }
+        #page-certification section:nth-child(3) div.container-global button:hover {
+          background-color: #fff; }
+    #page-certification section:nth-child(3) .container-card {
+      max-width: 890px;
+      margin: 0 auto;
+      margin-top: 8%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #page-certification section:nth-child(3) .container-card div {
+        width: 100%;
+        margin: 4% 0%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        #page-certification section:nth-child(3) .container-card div div {
+          width: 58px;
+          height: 58px;
+          margin: 0; }
+        #page-certification section:nth-child(3) .container-card div article {
+          padding-left: 6%;
+          padding-right: 3%;
+          width: 70%; }
+          #page-certification section:nth-child(3) .container-card div article h4 {
+            width: 100%;
+            font-size: 1.5em;
+            font-weight: 600; }
+          #page-certification section:nth-child(3) .container-card div article p {
+            font-size: 0.9em;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding-top: 4%; }
+      #page-certification section:nth-child(3) .container-card .wrap-icon {
+        color: #323b44;
+        border: 0.2rem solid #323b44;
+        padding: 1.48rem; }
+        #page-certification section:nth-child(3) .container-card .wrap-icon .icon-feature {
+          font-size: 2.5rem; }
 
 #page-certification .wrap-icon {
   border: 0.2rem solid #fff;

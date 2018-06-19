@@ -69,17 +69,20 @@ header{
           margin: 4% 0%;
           display: flex;
           flex-direction: row;
+          justify-content: space-between;
 
           div{
             width:76px;
             height: 76px;
+            max-width: 76px;
+            max-height: 76px;
             margin: 0;
           }
 
           article{
             padding-left: 6%;
             padding-right: 3%;
-            width: 90%;
+            width: 75%;
 
             h4{
               width: 100%;
@@ -112,7 +115,102 @@ header{
     &:nth-child(3){
       background-color: $white;
 
-      span.grey-black{ color: $orange; }
+      span.orange{ color: $orange; }
+
+      h2{
+        font-weight: bold;
+        font-size: 4rem;
+        text-align: center;
+        color: $grey-dark;
+      }
+      h3{
+        font-weight: bold;
+        font-size: 3rem;
+        color: $orange;
+      }
+      h4, p{ color:$grey-dark; }
+
+      div.container-global{
+        display: flex;
+        flex-direction: row;
+        margin-top: 6%;
+
+        div.container{
+          width: 50%;
+          padding: 0;
+          padding-right: 8em;
+
+          &:last-child{
+            border-left: 2px solid $grey-dark;
+            padding-right: 0;
+            padding-left: 8em;
+          }
+        }
+
+        button{
+          margin: 0 auto;
+          margin-top: 6%;
+          border: 0px;
+          padding: 1.5rem 4.5rem 1.5rem 4.5rem;
+          font-size: 1.3rem;
+          background-color: $orange;
+
+          &:hover{
+            background-color: $white;
+          }
+        }
+      }
+
+      .container-card{
+        max-width: 890px;
+        margin: 0 auto;
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+
+        div{
+          width:100%;
+          margin: 4% 0%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+
+          div{
+            width:58px;
+            height: 58px;
+            margin: 0;
+          }
+
+          article{
+            padding-left: 6%;
+            padding-right: 3%;
+            width: 70%;
+
+            h4{
+              width: 100%;
+              font-size: 1.5em;
+              font-weight: 600;
+            }
+            p{
+              font-size: 0.9em;
+              text-align: left;
+              width: 100%;
+              margin: 0;
+              padding-top: 4%;
+            }
+          }
+        }
+
+        .wrap-icon{
+          color: $grey-dark;
+          border: 0.2rem solid $grey-dark;
+          padding: 1.48rem;
+
+          .icon-feature{
+            font-size: 2.5rem;
+          }
+        }
+      }
     }
   }
 
