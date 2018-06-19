@@ -220,6 +220,18 @@ img {
 }
 
 
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
 .color-orange {
   color: $orange;
 }
@@ -260,4 +272,167 @@ img {
   letter-spacing: .1rem;
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.wrap-service {
+  color: $white;
+
+  &:nth-of-type(even) {
+    > * {
+      &:first-child {
+        order: 2;
+      }
+
+      &:last-child {
+        order: 1;
+
+        > * {
+          margin: 0 0 0 auto !important;
+        }
+      }
+    }
+  }
+
+  .img-service {
+    picture {
+      img {
+        object-fit: cover;
+        height: 21rem;
+      }
+    }
+  }
+
+  .content-service {
+    > * {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      .text-service {
+        text-align: center;
+
+        .title-service {
+          @include title();
+        }
+
+        .subtitle-service {
+          @include subtitle();
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .wrap-service {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > * {
+      width: 100%;
+
+      .container {
+        padding: 3rem;
+      }
+
+      picture {
+        > img {
+          height: 100% !important;
+          object-fit: cover;
+        }
+      }
+
+      &:first-child {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .container {
+          padding: 0;
+        }
+      }
+
+      &:last-child {
+        > * {
+          max-width: calc(180rem / 2);
+        }
+      }
+
+      &:last-child {
+        display: flex;
+        padding: 4rem 0;
+
+        .container {
+          margin: 0 auto 0 0;
+        }
+      }
+    }
+  }
+}
+
+.wrap-team {
+  background-color: $grey;
+  color: $white;
+}
+
+.wrap-team,
+.wrap-customer,
+.wrap-testimonial {
+  padding: 5rem 0;
+}
+
+.wrap-testimonial {
+  background-color: $white;
+
+  > * {
+    .owl-carousel-testimonials {
+      .owl-wrapper-outer {
+        .owl-wrapper {
+          .owl-item {
+            .item {
+              > * {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                  margin: 0;
+                  margin: 0 5rem;
+                }
+
+                .owl-carousel-item-imgoverlay {
+                  max-width: 100rem;
+                  display: flex;
+                  flex-flow: column nowrap;
+
+
+                  .owl-carousel-item-imgtitle {
+                    order: 2;
+                    color: $black;
+                    text-align: left;
+                    margin-top: 2rem;
+                    font-size: 1.8rem;
+                  }
+
+                  .owl-carousel-item-imgcontent {
+                    order: 1;
+                    font-size: 1.8rem;
+                    line-height: 2rem;
+                    font-style: italic;
+
+                    p {
+                      color: $black;
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

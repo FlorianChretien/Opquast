@@ -88,7 +88,7 @@
             </div>
     </section>
 
-    <section id="certification" class="wrap-service">
+    <section id="certification" class="wrap-service bg-blue">
         <div class="img-service">
             <picture>
                 <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/certification.jpg">
@@ -135,7 +135,7 @@
         </div>
     </section>
 
-    <section id="formation" class="wrap-service">
+    <section id="formation" class="wrap-service bg-orange">
         <div class="img-service">
             <picture>
                 <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/formation.jpg">
@@ -182,7 +182,7 @@
         </div>
     </section>
 
-    <section id="check-list" class="wrap-service">
+    <section id="check-list" class="wrap-service bg-green">
         <div class="img-service">
             <picture>
                 <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/checklist.jpg">
@@ -231,7 +231,7 @@
 
     <section class="wrap-team">
         <div class="container">
-            <h2 class="title-carousel">L'équipe Opquast</h2>
+            <h2 class="title-carousel">Notre équipe</h2>
             <?php echo do_shortcode('[owl-carousel category="team" singleItem="false" autoPlay="true"]'); ?>
         </div>
     </section>
@@ -245,7 +245,7 @@
 
     <section class="wrap-testimonial">
         <div class="container">
-            <h2 class="title-carousel">Témoignages de nos certifiés</h2>
+            <h2 class="title-carousel">Témoignages</h2>
             <?php echo do_shortcode('[owl-carousel category="testimonials" singleItem="true" autoPlay="false"]'); ?>
         </div>
     </section>

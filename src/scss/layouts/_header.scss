@@ -247,6 +247,7 @@
             > ul {
               display: flex;
               flex-direction: row;
+              align-items: center;
 
               li {
                 margin: 0 1rem;
@@ -292,9 +293,34 @@
           ul {
             li {
               a {
+                position: relative;
                 font-family: $title;
                 font-weight: $semi-bold;
                 text-transform: uppercase;
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                transition: all .5s;
+
+                &:after {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  width: 0;
+                  content: '.';
+                  color: transparent;
+                  background: $white;
+                  height: .1rem;
+                  transition: all .5s;
+                }
+
+                &:hover {
+                  &:after {
+                    width: 100%;
+                  }
+                }
               }
             }
           }
