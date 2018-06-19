@@ -783,20 +783,20 @@ img {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
-        .wrap-header .container .wrap-links .primary-nav .menu ul {
+        .wrap-header .container .wrap-links .primary-nav ul.menu {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: row nowrap;
-                  flex-direction: row nowrap; }
-          .wrap-header .container .wrap-links .primary-nav .menu ul li {
+              -ms-flex-direction: row;
+                  flex-direction: row; }
+          .wrap-header .container .wrap-links .primary-nav ul.menu li {
             margin: 0 1rem;
             letter-spacing: .1rem; }
-            .wrap-header .container .wrap-links .primary-nav .menu ul li a:hover,
-            .wrap-header .container .wrap-links .primary-nav .menu ul li a:focus,
-            .wrap-header .container .wrap-links .primary-nav .menu ul li a:active {
+            .wrap-header .container .wrap-links .primary-nav ul.menu li a:hover,
+            .wrap-header .container .wrap-links .primary-nav ul.menu li a:focus,
+            .wrap-header .container .wrap-links .primary-nav ul.menu li a:active {
               font-weight: 700; }
       .wrap-header .container .wrap-links .link-login {
         -webkit-box-ordinal-group: 3;
