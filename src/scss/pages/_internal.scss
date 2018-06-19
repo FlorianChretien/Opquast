@@ -1,0 +1,144 @@
+// Page certification, formations
+.wrap-overview {
+  &.internal-page {
+    height: auto !important;
+
+    .container {
+      .head-overview {
+        .text-overview {
+          color: $white;
+
+          .title-overview {
+            text-transform: uppercase;
+          }
+        }
+
+        .button-overview {
+          .btn {
+            @include btn($grey-dark, $white);
+          }
+        }
+      }
+
+      .wrap-anchors {
+        .anchor {
+          .img-anchor {
+            color: $grey !important;
+          }
+        }
+      }
+
+      .wrap-keys {
+        background-color: $white;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+        //padding: 3rem 0;
+        -moz-box-shadow: 0 0 1rem 0 $grey;
+        -webkit-box-shadow: 0 0 1rem 0 $grey;
+        -o-box-shadow: 0 0 1rem 0 $grey;
+        box-shadow: 0 0 1rem 0 $grey;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=10);
+        border-radius: 1rem;
+
+        > .column-key {
+          flex-grow: 1;
+          width: 100%;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          padding: 3rem;
+
+          &:not(:last-child) {
+            border-right: .1rem solid $grey;
+          }
+
+          &:last-child {
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 0;
+          }
+
+          > .row-key {
+            flex-grow: 1;
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            padding: 3rem;
+
+            &:not(:last-child) {
+              border-bottom: .1rem solid $grey;
+            }
+          }
+        }
+
+        .icon-key {
+          font-size: 5rem;
+          color: $orange;
+          margin-right: 3rem;
+        }
+
+        .content-key {
+          .title-key {
+            font-size: 2rem;
+            font-weight: $bold;
+            margin-bottom: 1rem;
+          }
+
+          .text-key {
+            line-height: 2rem;
+            text-align: justify;
+          }
+        }
+      }
+
+      @media (min-width: 640px) {
+        .wrap-keys {
+          margin: 5rem auto 5rem auto;
+        }
+      }
+
+      @media (min-width: 1000px) {
+        .wrap-keys {
+          margin: 10rem auto 10rem auto;
+        }
+      }
+
+    }
+  }
+}
+
+.wrap-target {
+  padding: 5rem 0;
+
+  &:nth-of-type(odd) {
+    background-color: $blue;
+    color: $white;
+  }
+
+  > * {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+      margin: 2rem 0;
+    }
+
+    .title-target {
+      @include title();
+    }
+
+    .icon-target {
+      font-size: 15rem;
+    }
+
+    .text-target {
+      max-width: 100rem;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+    }
+  }
+}

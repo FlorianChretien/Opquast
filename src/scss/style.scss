@@ -11,15 +11,16 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
-@import "common/_variables.scss";
-@import "components/_buttons.scss";
-@import "components/_form.scss";
-@import "common/_global.scss";
+@import "common/_variables";
+@import "components/_buttons";
+@import "components/_form";
+@import "common/_global";
 
-@import "layouts/_footer.scss";
-@import "layouts/_header.scss";
+@import "layouts/_footer";
+@import "layouts/_header";
 
-@import "pages/_certification.scss";
-@import "pages/_home.scss";
-@import "pages/_login.scss";
+@import "pages/_certification";
+@import "pages/_home";
+@import "pages/_login";
+@import "pages/_internal";
 
