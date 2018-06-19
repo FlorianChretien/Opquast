@@ -878,6 +878,10 @@ header {
       margin-bottom: 0.2em;
       line-height: 1.4em;
       font-size: 1.3em; }
+      #page-certification section .container p:first-child {
+        text-transform: uppercase; }
+    #page-certification section .container h1 {
+      text-transform: uppercase; }
     #page-certification section .container .container-button {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -896,7 +900,8 @@ header {
     #page-certification section:nth-child(2) h2 {
       text-align: center;
       font-weight: bold;
-      font-size: 4rem; }
+      font-size: 4rem;
+      text-transform: uppercase; }
       #page-certification section:nth-child(2) h2 span.grey-black {
         color: #323b44; }
     #page-certification section:nth-child(2) p {

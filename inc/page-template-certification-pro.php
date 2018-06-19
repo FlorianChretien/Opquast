@@ -6,7 +6,7 @@
 <div id="page-certification">
     <section>
         <div class="container">
-            <p>Pour les <span class="blue">écoles</span></p>
+            <p>Pour les <span class="blue">professionnels</span></p>
             <h1><span class="blue">La certification</span> Opquast</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor porta augue. Praesent suscipit risus nec dolor tincidunt,

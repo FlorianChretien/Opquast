@@ -1,12 +1,12 @@
 <!--
-    Template Name: Certification Particulier
+    Template Name: Certification Ecole
 -->
 <?php get_header('opquast'); ?>
 
 <div id="page-certification">
     <section>
         <div class="container">
-            <p>Pour les <span class="blue">particuliers</span></p>
+            <p>Pour les <span class="blue">écoles</span></p>
             <h1><span class="blue">La certification</span> Opquast</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor porta augue. Praesent suscipit risus nec dolor tincidunt,
@@ -20,7 +20,7 @@
         </div>
     </section>
     <section>
-        <h2><span class="grey-black">Passez la certification et</span><br/> boostez vos compétences</h2>
+        <h2><span class="grey-black">Une certification</span><br/> de qualité pour vos étudiants</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper a ligula vel congue. Aliquam vel tortor massa.
             Nam eget condimentum tellus, consectetur cursus mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
