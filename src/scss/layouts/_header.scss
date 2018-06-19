@@ -243,18 +243,20 @@
           display: block;
           order: 1;
 
-          .menu {
-            display: flex;
-            flex-direction: row;
+          div[class ^= "menu"] {
+            > ul {
+              display: flex;
+              flex-direction: row;
 
-            li {
-              margin: 0 1rem;
-              letter-spacing: .1rem;
+              li {
+                margin: 0 1rem;
+                letter-spacing: .1rem;
 
-              a:hover,
-              a:focus,
-              a:active {
-                font-weight: $bold;
+                a:hover,
+                a:focus,
+                a:active {
+                  font-weight: $bold;
+                }
               }
             }
           }

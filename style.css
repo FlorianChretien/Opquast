@@ -809,7 +809,7 @@ img {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
-        .wrap-header .container .wrap-links .primary-nav .menu {
+        .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -817,12 +817,12 @@ img {
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row; }
-          .wrap-header .container .wrap-links .primary-nav .menu li {
+          .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li {
             margin: 0 1rem;
             letter-spacing: .1rem; }
-            .wrap-header .container .wrap-links .primary-nav .menu li a:hover,
-            .wrap-header .container .wrap-links .primary-nav .menu li a:focus,
-            .wrap-header .container .wrap-links .primary-nav .menu li a:active {
+            .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li a:hover,
+            .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li a:focus,
+            .wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul li a:active {
               font-weight: 700; }
       .wrap-header .container .wrap-links .link-login {
         -webkit-box-ordinal-group: 3;
