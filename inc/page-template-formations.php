@@ -61,4 +61,53 @@
     </section>
 </div>
 
+<main>
+    <section class="wrap-service">
+        <div class="img-service">
+            <picture>
+                <source media="(min-width: 640px)" srcset="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/formation.jpg">
+                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la formation">
+            </picture>
+        </div>
+        <div class="content-service">
+            <div class="container">
+                <div class="text-service">
+                    <h2 class="title-service">Formations</h2>
+                    <p class="subtitle-service">Préparez vos équipes au futur projet web grâce à nos deux formations. C’est l’occasion d'améliorer le dialogue en interne en adoptant le même langage. Pour valider les compétences acquises vos employés finiront par la certification.</p>
+                </div>
+                <div class="wrap-features">
+                    <div class="feature">
+                        <div class="wrap-icon">
+                            <span class="icon-trainings icon-feature"></span>
+                        </div>
+                        <div class="text-feature">
+                            <h3 class="title-feature">2 formations</h3>
+                            <p class="legend-feature">Pour répondre aux besoins de l’équipe, nous vous proposons les formations : "Sensibilisation à la qualité Web” et “Référent qualité web".</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="wrap-icon">
+                            <span class="icon-trainers icon-feature"></span>
+                        </div>
+                        <div class="text-feature">
+                            <h3 class="title-feature">15 formateurs</h3>
+                            <p class="legend-feature">Tous experts dans leur secteur. Ils seront présents dans votre entreprise le temps de la formation.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="wrap-icon">
+                            <span class="icon-result icon-feature"></span>
+                        </div>
+                        <div class="text-feature">
+                            <h3 class="title-feature">Certification finale Opquast</h3>
+                            <p class="legend-feature">Au final : une certification inscrite à l’Inventaire National des Certifications Professionnelles.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
+            </div>
+        </div>
+    </section>
+</main>
+
 <?php get_footer('opquast') ?>

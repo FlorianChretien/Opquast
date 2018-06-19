@@ -172,13 +172,13 @@
 .wrap-features {
   display: flex;
   flex-flow: column wrap;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 
   .feature {
     display: flex;
     flex-flow: row nowrap;
     align-items: start;
-    margin: 2.5rem 0;
+    margin: 2rem 0;
 
     .text-feature {
       line-height: 2rem;
@@ -202,15 +202,6 @@
   .wrap-features {
     padding: 0 5rem;
   }
-}
-
-@mixin subtitle() {
-  font-family: $texte;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  letter-spacing: .1rem;
-  text-align: center;
-  margin-bottom: 7rem;
 }
 
 .wrap-presentation {
@@ -327,6 +318,10 @@
 
     > * {
       width: 100%;
+
+      .container {
+        padding: 3rem;
+      }
 
       picture {
         > * {
