@@ -91,7 +91,7 @@
     <section id="certification" class="wrap-service">
         <div class="img-service">
             <picture>
-                <source media="(min-width: 640px)" srcset="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/certification.jpg">
+                <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/certification.jpg">
                 <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
             </picture>
         </div>
@@ -138,7 +138,7 @@
     <section id="formation" class="wrap-service">
         <div class="img-service">
             <picture>
-                <source media="(min-width: 640px)" srcset="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/formation.jpg">
+                <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/formation.jpg">
                 <img src="http://via.placeholder.com/375x130" alt="Image illustrant la formation">
             </picture>
         </div>
@@ -185,7 +185,7 @@
     <section id="check-list" class="wrap-service">
         <div class="img-service">
             <picture>
-                <source media="(min-width: 640px)" srcset="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/checklist.jpg">
+                <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/checklist.jpg">
                 <img src="http://via.placeholder.com/375x130" alt="Image illustrant la check-list">
             </picture>
         </div>
