@@ -8,21 +8,24 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
+import classie from 'classie';
+const Snap = require(`imports-loader?this=>window,fix=>module.exports=0!snapsvg/dist/snap.svg.js`);
+
 (function() {
 
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false,
+	let bodyEl = document.body;
+    let content = document.querySelector( '.content-wrap' );
+	let	openbtn = document.getElementById( 'open-button' );
+	let	closebtn = document.getElementById( 'close-button' );
+	let	isOpen = false;
 
-		morphEl = document.getElementById( 'morph-shape' ),
-		s = Snap( morphEl.querySelector( 'svg' ) );
+	let	morphEl = document.getElementById( 'morph-shape' );
+	let	s = Snap( morphEl.querySelector( 'svg' ) );
 
-		path = s.select( 'path' );
-		initialPath = this.path.attr('d'),
-		pathOpen = morphEl.getAttribute( 'data-morph-open' ),
-		isAnimating = false;
+	let path = s.select( 'path' );
+    let initialPath = path.attr('d');
+    let pathOpen = morphEl.getAttribute( 'data-morph-open' );
+    let isAnimating = false;
 
 	function init() {
 		initEvents();

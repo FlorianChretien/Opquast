@@ -1,3 +1,4 @@
+
     <footer class="wrap-footer">
         <div class="container">
             <a href="http://127.0.0.1:8080/edsa-opquast-brown/" class="link-home">
@@ -35,11 +36,10 @@
             </section>
         </div>
     </footer>
+    </div>
     <?php
     wp_enqueue_script( 'script', get_template_directory_uri() . '/dist/js/main.min.js', true);
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
-    wp_enqueue_script('classie', get_template_directory_uri().'/dist/library/off-canvas-menu-effects/classie.js');
-    wp_enqueue_script('mainMenu', get_template_directory_uri().'/dist/library/off-canvas-menu-effects/mainMenu.js', array('classie'));
 
     wp_footer();
     ?>

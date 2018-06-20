@@ -24,7 +24,10 @@
     "webpack-dev-server": "^2.9.4"
   },
   "dependencies": {
+    "classie": "^1.0.0",
     "file-loader": "^1.1.11",
-    "node-sass": "^4.7.1"
+    "imports-loader": "^0.8.0",
+    "node-sass": "^4.7.1",
+    "snapsvg": "^0.5.1"
   }
 }

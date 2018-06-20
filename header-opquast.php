@@ -11,9 +11,33 @@
         <?php wp_enqueue_script("jquery"); ?>
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/jquery-3.3.1.min.js"></script>
         <?php wp_head(); ?>
-        <?php wp_enqueue_script('snap.svg-min', get_template_directory_uri().'dist/library/off-canvas-menu-effects/snap.svg-min.js'); ?>
     </head>
     <body>
+        <div id="menu-burger">
+            <div class="menu-wrap">
+                <div>
+                    <div class="morph-shape" id="morph-shape" data-morph-open="M841.9,595.3H-8.4c0,0,8.4-125.4,8.4-297.6C0,117.1-8.4,0-8.4,0l850.3,0V595.3z">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                            <path d=“M75,75H-0.8c0,0,73.4-16.2,73.4-37.9C72.6,14.4-0.8,0-0.8,0L75,0V75z”/>
+                        </svg>
+                    </div>
+                    <nav class="menu-animation">
+                        <div class="icon-list">
+                            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu' => 'Menu Burger') ); ?>
+
+                            <form role="search" method="get" id="searchform" class="searchform" action="<?php echo get_site_url() ?>">
+                                <input type="search" value="" name="s" id="s" placeholder="Recherche"/>
+                                <input type="submit" id="searchsubmit" value="Search" />
+                            </form>
+                        </div>
+                    </nav>
+                    <button class="close-button" id="close-button">Close Menu</button>
+                </div>
+            </div>
+            <button class="menu-button" id="open-button">Open Menu</button>
+        </div>
+        <div class="content-wrap">
+
         <div class="header <?php if($post_slug != "accueil") echo 'header-inverse'; ?>">
         <?php
         switch ($post_slug){
@@ -52,26 +76,6 @@
                     </nav>
 
                     <a href="<?php echo get_site_url() ?>/login/" class="link-login btn btn-primary">Connexion</a>
-
-                    <div id="menu-btn">
-                        <span class="icon"></span>
-                        <span class="text">MENU</span>
-                    </div>
-                    <div id="menu-burger">
-                        <button class="menu-button" id="open-button">Open Menu</button>
-                    </div>
-                    <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
-                            <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
-                        </svg>
-                    </div>
                 </div>
-
-                <!--        <form role="search" method="get" id="searchform" class="searchform"-->
-                <!--              action="--><?php //echo get_site_url() ?><!--">-->
-                <!--            <!--<label class="screen-reader-text" for="s">Search for:</label>-->
-                <!--            <input type="search" value="" name="s" id="s" placeholder="Recherche"/>-->
-                <!--            <!--<input type="submit" id="searchsubmit" value="Search" />-->
-                <!--        </form>-->
             </div>
         </header>
