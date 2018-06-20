@@ -18,7 +18,7 @@
                     <span class="icon-professional img-anchor"></span>
                     <div class="text-anchors">
                         <p class="title-anchor">Professionnels</p>
-                        <a href="#professional" class="btn btn-primary btn-sm">Découvrir</a>
+                        <a href="<?php echo get_site_url() ?>/certification/certification-particulier/" class="btn btn-primary btn-sm">Découvrir</a>
                     </div>
                 </div>
                 <div class="anchor">

@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/wow.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/detectmobilebrowser.js"></script>
+        <?php wp_enqueue_script('snap.svg-min', get_template_directory_uri().'dist/library/off-canvas-menu-effects/snap.svg-min.js'); ?>
     </head>
     <body>
         <div class="header<?php if($post_slug != "accueil") echo ' header-inverse'; ?>">
@@ -57,6 +58,14 @@
                     <div id="menu-btn">
                         <span class="icon"></span>
                         <span class="text">MENU</span>
+                    </div>
+                    <div id="menu-burger">
+                        <button class="menu-button" id="open-button">Open Menu</button>
+                    </div>
+                    <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                            <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+                        </svg>
                     </div>
                 </div>
 

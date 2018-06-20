@@ -16,8 +16,9 @@
 @import "components/form";
 @import "common/global";
 
-@import "layouts/footer";
-@import "layouts/header";
+@import "layouts/_footer";
+@import "layouts/_header";
+@import "layouts/_menu-elastic.scss";
 
 @import "pages/certification";
 @import "pages/home";
