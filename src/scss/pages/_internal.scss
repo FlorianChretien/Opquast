@@ -6,16 +6,32 @@
     .container {
       .head-overview {
         .text-overview {
+          display: block;
           color: $white;
 
           .title-overview {
-            text-transform: uppercase;
+            font-size: 4rem;
+            line-height: 4.5rem;
+            margin-bottom: 1rem;
+          }
+
+          .baseline-overview {
+            line-height: 2.5rem;
           }
         }
 
         .button-overview {
           .btn {
             @include btn($grey-dark, $white);
+          }
+        }
+
+        @media (min-width: 640px) {
+          .text-overview {
+            .title-overview {
+              font-size: 5rem;
+              line-height: 5.5rem;
+            }
           }
         }
       }

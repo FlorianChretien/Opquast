@@ -1,0 +1,85 @@
+.wrap-prices {
+  background-color: $bg;
+  width: 100%;
+
+  > * {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    > .price {
+      flex-grow: 1;
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      max-width: 35rem;
+      background-color: $blue;
+      margin: 2rem 0;
+      text-align: center;
+      -moz-box-shadow: 0 0 1rem 0 $grey;
+      -webkit-box-shadow: 0 0 1rem 0 $grey;
+      -o-box-shadow: 0 0 1rem 0 $grey;
+      box-shadow: 0 0 1rem 0 $grey;
+      filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=10);
+      border-radius: 1rem;
+
+      .head-price {
+        background-color: $grey-dark;
+        color: $white;
+        padding: 3rem 6rem;
+        border-radius: 1rem 1rem 0 0;
+        height: 21rem;
+
+        > .price {
+          font-size: 6rem;
+          font-weight: $bold;
+          margin-bottom: 3rem;
+        }
+
+        > .legend-price {
+          font-size: 2rem;
+        }
+      }
+
+      .content-price {
+        background-color: $blue;
+        padding: 3rem 6rem;
+
+        .subtitle-price {
+          font-size: 2rem;
+          margin-bottom: 4rem;
+        }
+
+        .text-price {
+          line-height: 2rem;
+        }
+
+        .btn {
+          margin-top: 5rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 640px) {
+    > * {
+      flex-flow: row wrap;
+      align-items: initial;
+
+      > .price {
+        margin: 2rem;
+        min-width: 35rem;
+      }
+    }
+  }
+
+  @media (min-width: 1800px) {
+    > * {
+      > .price {
+        margin: 5rem;
+      }
+    }
+  }
+}

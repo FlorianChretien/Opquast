@@ -53,6 +53,37 @@
   a {
     color: $white;
   }
+
+  .wrap-header {
+    .container {
+      .wrap-links {
+        .primary-nav {
+          .menu {
+            ul {
+              li {
+                a {
+                  &:after {
+                    background: $white;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        #menu-btn {
+          &:before,
+          &:after {
+            background-color: $white;
+          }
+
+          .text {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
 }
 
 .wrap-header {
@@ -62,159 +93,6 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
-    .wrap-links {
-      display: flex;
-      align-items: center;
-
-      > * {
-        margin: 0 .9rem;
-      }
-
-      .link-login {
-        order: 2;
-      }
-
-      #menu-btn {
-        order: 1;
-      }
-    }
-
-
-    $anim_time: 1s;
-
-    //OPEN
-    @keyframes topBar_open {
-      0% { transform: translateY(0px) rotate(0deg) ; width: 60px; }
-      10% {transform: translateY(-8px) rotate(0deg); width: 60px; }
-      50% {transform: translateY(25px) rotate(45deg); width: 84px; }
-      75% {transform: translateY(12px) rotate(45deg); width: 84px; }
-      100% {transform: translateY(17px) rotate(45deg); width: 84px; }
-    }
-
-    @keyframes bottomBar_open {
-      0% { transform: translateY(0px) rotate(0deg) ; width: 60px; }
-      10% { transform: translateY(-8px) rotate(0deg) ; width: 60px; }
-      60% {transform: translateY(0px) rotate(-45deg); width: 84px; }
-      75% {transform: translateY(-10px) rotate(-45deg); width: 84px; }
-      100% {transform: translateY(-8px) rotate(-45deg); width: 84px; }
-    }
-
-    @keyframes menuLabel_open {
-      0% { transform: translateY(0px); opacity: 1; }
-      25% {transform: translateY(-18px); }
-      45% {transform: translateY(44px); opacity: 1; }
-      48% {transform: translateY(50px); opacity: 0; }
-      100% {transform: translateY(30px); opacity: 0; }
-    }
-
-    // CLOSE
-    @keyframes topBar_close {
-      0% {transform: translateY(17px) rotate(45deg); width: 84px; }
-      35% {transform: translateY(-8px) rotate(-4deg); width: 60px; }
-      53% {transform: translateY(10px) rotate(3deg); width: 60px; }
-      70% {transform: translateY(-6px) rotate(0deg); width: 60px; }
-      100% { transform: translateY(-2px) rotate(0deg) ; width: 60px; }
-    }
-
-    @keyframes bottomBar_close {
-      0% {transform: translateY(-8px) rotate(-45deg); width: 84px; }
-      35% {transform: translateY(-18px) rotate(6deg); width: 60px; }
-      53% {transform: translateY(0px) rotate(-3deg); width: 60px; }
-      68% { transform: translateY(-7px) rotate(0deg) ; width: 60px; }
-      100% { transform: translateY(0px) rotate(0deg) ; width: 60px; }
-    }
-
-    @keyframes menuLabel_close {
-      0% {transform: translateY(30px); opacity: 0; }
-      5% {transform: translateY(25px); opacity: 1; }
-      25% {transform: translateY(-30px); opacity: 1; }
-      37% {transform: translateY(-22px); opacity: 1; }
-      45% {transform: translateY(-22px); opacity: 1; }
-      58% {transform: translateY(8px) rotate(-10deg); opacity: 1; }
-      83% {transform: translateY(-6px) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(0px); opacity: 1; }
-    }
-
-    #menu-btn {
-      display: block;
-      position: relative;
-      text-align: center;
-      width: 60px;
-      height: 65px;
-
-      &:before,
-      &:after {
-        content: '';
-        width: 100%;
-        height: 8px;
-        background-color: $grey-dark;
-        display: block;
-        position: absolute;
-        border-radius: 20px;
-      }
-
-      &:before {
-        transform-origin: left center;
-
-      }
-
-      &:after {
-        right: 0;
-        top: 25px;
-        transform-origin: right center;
-      }
-
-      .text {
-        color: $grey-dark;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        font-size: 17px;
-        font-weight: $bold;
-        letter-spacing: 2.5px;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &.open {
-        &:before {
-          animation: topBar_open $anim_time ease-in-out;
-          animation-fill-mode: forwards;
-        }
-
-        &:after {
-          animation: bottomBar_open $anim_time ease-in-out;
-          animation-fill-mode: forwards;
-        }
-
-        .text {
-          animation: menuLabel_open $anim_time ease-in;
-          animation-fill-mode: forwards;
-        }
-
-      }
-
-      &.close {
-        &:before {
-          animation: topBar_close $anim_time ease-in-out;
-          animation-fill-mode: forwards;
-        }
-
-        &:after {
-          animation: bottomBar_close $anim_time ease-in-out;
-          animation-fill-mode: forwards;
-        }
-
-        .text {
-          animation: menuLabel_close $anim_time ease-in;
-          animation-fill-mode: forwards;
-        }
-
-      }
-    }
 
     .brand {
       .img-logo {
@@ -228,8 +106,195 @@
       }
     }
 
-    .primary-nav {
-      display: none;
+    .wrap-links {
+      display: flex;
+      align-items: center;
+
+      > * {
+        margin: 0 .9rem;
+      }
+
+      .primary-nav {
+        display: none;
+
+        .menu {
+          ul {
+            li {
+              a {
+                position: relative;
+                font-family: $title;
+                font-weight: $semi-bold;
+                text-transform: uppercase;
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                transition: all .5s;
+
+                &:after {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  width: 0;
+                  content: '.';
+                  color: transparent;
+                  background: $black;
+                  height: .2rem;
+                  transition: all .5s;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                  &:after {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .link-login {
+        order: 2;
+      }
+
+      $anim_time: 1s;
+
+      //OPEN
+      @keyframes topBar_open {
+        0% { transform: translateY(0px) rotate(0deg) ; width: 60px; }
+        10% {transform: translateY(-8px) rotate(0deg); width: 60px; }
+        50% {transform: translateY(25px) rotate(45deg); width: 84px; }
+        75% {transform: translateY(12px) rotate(45deg); width: 84px; }
+        100% {transform: translateY(17px) rotate(45deg); width: 84px; }
+      }
+
+      @keyframes bottomBar_open {
+        0% { transform: translateY(0px) rotate(0deg) ; width: 60px; }
+        10% { transform: translateY(-8px) rotate(0deg) ; width: 60px; }
+        60% {transform: translateY(0px) rotate(-45deg); width: 84px; }
+        75% {transform: translateY(-10px) rotate(-45deg); width: 84px; }
+        100% {transform: translateY(-8px) rotate(-45deg); width: 84px; }
+      }
+
+      @keyframes menuLabel_open {
+        0% { transform: translateY(0px); opacity: 1; }
+        25% {transform: translateY(-18px); }
+        45% {transform: translateY(44px); opacity: 1; }
+        48% {transform: translateY(50px); opacity: 0; }
+        100% {transform: translateY(30px); opacity: 0; }
+      }
+
+      // CLOSE
+      @keyframes topBar_close {
+        0% {transform: translateY(17px) rotate(45deg); width: 84px; }
+        35% {transform: translateY(-8px) rotate(-4deg); width: 60px; }
+        53% {transform: translateY(10px) rotate(3deg); width: 60px; }
+        70% {transform: translateY(-6px) rotate(0deg); width: 60px; }
+        100% { transform: translateY(-2px) rotate(0deg) ; width: 60px; }
+      }
+
+      @keyframes bottomBar_close {
+        0% {transform: translateY(-8px) rotate(-45deg); width: 84px; }
+        35% {transform: translateY(-18px) rotate(6deg); width: 60px; }
+        53% {transform: translateY(0px) rotate(-3deg); width: 60px; }
+        68% { transform: translateY(-7px) rotate(0deg) ; width: 60px; }
+        100% { transform: translateY(0px) rotate(0deg) ; width: 60px; }
+      }
+
+      @keyframes menuLabel_close {
+        0% {transform: translateY(30px); opacity: 0; }
+        5% {transform: translateY(25px); opacity: 1; }
+        25% {transform: translateY(-30px); opacity: 1; }
+        37% {transform: translateY(-22px); opacity: 1; }
+        45% {transform: translateY(-22px); opacity: 1; }
+        58% {transform: translateY(8px) rotate(-10deg); opacity: 1; }
+        83% {transform: translateY(-6px) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(0px); opacity: 1; }
+      }
+
+      #menu-btn {
+        order: 1;
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 60px;
+        height: 65px;
+
+        &:before,
+        &:after {
+          content: '';
+          width: 100%;
+          height: 8px;
+          background-color: $grey-dark;
+          display: block;
+          position: absolute;
+          border-radius: 20px;
+        }
+
+        &:before {
+          transform-origin: left center;
+
+        }
+
+        &:after {
+          right: 0;
+          top: 25px;
+          transform-origin: right center;
+        }
+
+        .text {
+          color: $grey-dark;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          font-size: 17px;
+          font-weight: $bold;
+          letter-spacing: 2.5px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.open {
+          &:before {
+            animation: topBar_open $anim_time ease-in-out;
+            animation-fill-mode: forwards;
+          }
+
+          &:after {
+            animation: bottomBar_open $anim_time ease-in-out;
+            animation-fill-mode: forwards;
+          }
+
+          .text {
+            animation: menuLabel_open $anim_time ease-in;
+            animation-fill-mode: forwards;
+          }
+
+        }
+
+        &.close {
+          &:before {
+            animation: topBar_close $anim_time ease-in-out;
+            animation-fill-mode: forwards;
+          }
+
+          &:after {
+            animation: bottomBar_close $anim_time ease-in-out;
+            animation-fill-mode: forwards;
+          }
+
+          .text {
+            animation: menuLabel_close $anim_time ease-in;
+            animation-fill-mode: forwards;
+          }
+        }
+      }
     }
 
     @media (min-width: 1000px) {
@@ -239,6 +304,7 @@
 
       .wrap-links {
         order: 2;
+
         .primary-nav {
           display: block;
           order: 1;
@@ -247,6 +313,7 @@
             > ul {
               display: flex;
               flex-direction: row;
+              align-items: center;
 
               li {
                 margin: 0 1rem;
@@ -287,18 +354,6 @@
 
       .primary-nav {
         order: 2;
-
-        .menu {
-          ul {
-            li {
-              a {
-                font-family: $title;
-                font-weight: $semi-bold;
-                text-transform: uppercase;
-              }
-            }
-          }
-        }
       }
 
       .link-login {

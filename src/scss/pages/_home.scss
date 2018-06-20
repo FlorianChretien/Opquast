@@ -148,11 +148,150 @@
           }
         }
       }
+
+      .mouse_scroll {
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+        width: 2.5rem;
+        height: 10rem;
+      }
+
+
+      .m_scroll_arrows {
+        display: block;
+        width: 5px;
+        height: 5px;
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        margin: 0 0 3px 4px;
+
+        width: 16px;
+        height: 16px;
+      }
+
+
+      .unu {
+        margin-top: 1px;
+      }
+
+      .unu, .doi, .trei {
+        -webkit-animation: mouse-scroll 1s infinite;
+        -moz-animation: mouse-scroll 1s infinite;
+      }
+
+      .unu {
+        -webkit-animation-delay: .1s;
+        -moz-animation-delay: .1s;
+        -webkit-animation-direction: alternate;
+      }
+
+      .doi {
+        -webkit-animation-delay: .2s;
+        -moz-animation-delay: .2s;
+        -webkit-animation-direction: alternate;
+        margin-top: -6px;
+      }
+
+      .trei {
+        -webkit-animation-delay: .3s;
+        -moz-animation-delay: .3s;
+        -webkit-animation-direction: alternate;
+        margin-top: -6px;
+      }
+
+
+
+
+      .mouse {
+        height: 42px;
+        width: 24px;
+        border-radius: 14px;
+        transform: none;
+        border: 2px solid white;
+        top: 170px;
+      }
+
+      .wheel {
+        height: 5px;
+        width: 2px;
+        display: block;
+        margin: 5px auto;
+        background: white;
+        position: relative;
+
+        height: 4px;
+        width: 4px;
+        border: 2px solid #fff;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+
+
+      }
+
+      .wheel {
+        -webkit-animation: mouse-wheel 0.6s linear infinite;
+        -moz-animation: mouse-wheel 0.6s linear infinite;
+      }
+
+
+
+      @-webkit-keyframes mouse-wheel {
+        0% {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+
+        100% {
+          opacity: 0;
+          -webkit-transform: translateY(6px);
+          -ms-transform: translateY(6px);
+          transform: translateY(6px);
+        }
+      }
+
+      @-moz-keyframes mouse-wheel {
+        0% { top: 1px; }
+        25% { top: 2px; }
+        50% { top: 3px;}
+        75% { top: 2px;}
+        100% { top: 1px;}
+      }
+
+      @-webkit-keyframes mouse-scroll {
+        0%   { opacity: 0;}
+        50%  { opacity: .5;}
+        100% { opacity: 1;}
+      }
+
+      @-moz-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+      }
+
+      @-o-keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+      }
+
+      @keyframes mouse-scroll {
+        0%   { opacity: 0; }
+        50%  { opacity: .5; }
+        100% { opacity: 1; }
+      }
     }
 
     @media (min-width: 1000px) {
       .wrap-anchors {
-        margin: 10rem auto 10rem auto;
+        margin: 8rem auto 8rem auto;
       }
     }
   }
@@ -288,194 +427,59 @@
   }
 }
 
-.wrap-service {
-  color: $white;
+.wrap-social {
+  padding: 4rem 0;
 
-  .content-service {
-    > * {
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-
-      .text-service {
-        text-align: center;
-
-        .title-service {
-          @include title();
-        }
-
-        .subtitle-service {
-          @include subtitle();
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 640px) {
-  .wrap-service {
+  > * {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    align-items: center;
 
-    > * {
-      width: 100%;
+    .title-social {
+      @include title();
+    }
 
-      .container {
-        padding: 3rem;
+    .wrap-advantages {
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem 0;
+
+      > * {
+        margin: 0 2rem;
       }
 
-      picture {
-        > * {
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      &:first-child {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        .container {
-          padding: 0;
-        }
-      }
-
-      &:last-child {
-        > * {
-          max-width: calc(180rem / 2);
-        }
-      }
-
-      &:last-child {
+      .advantage {
         display: flex;
-        padding: 4rem 0;
+        flex-flow: column nowrap;
+        align-items: center;
 
-        .container {
-          margin: 0 auto 0 0;
-        }
-      }
-    }
-  }
-
-  #certification {
-    > * {
-      &:first-child {
-        background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/certification.jpg");
-      }
-    }
-  }
-
-  #formation {
-    > * {
-      &:first-child {
-        background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/formation.jpg");
-        order: 2;
-      }
-
-      &:last-child {
-        order: 1;
-
-        > * {
-          margin: 0 0 0 auto;
-        }
-      }
-    }
-  }
-
-  #check-list {
-    > * {
-      &:first-child {
-        background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/checklist.jpg");
-      }
-    }
-  }
-}
-
-#certification {
-  background-color: $blue;
-}
-
-#formation {
-  background-color: $orange;
-}
-
-#check-list {
-  background-color: $green;
-}
-
-.title-carousel {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 5rem;
-}
-
-.title-carousel {
-  @include title();
-}
-
-
-.owl-carousel {
-  .owl-wrapper-outer {
-    .owl-wrapper {
-      .owl-item {
-        .item {
+        .wrap-number {
+          border-radius: 50%;
+          padding: 2.5rem;
+          border: .5rem solid $grey;
           text-align: center;
+          width: 7.5rem;
+          height: 7.5rem;
+          margin-bottom: 2rem;
 
-          &:hover {
-            .owl-carousel-item-imgoverlay {
-              background: transparent;
-            }
+          .number-checklist {
+            font-size: 3rem;
+            font-weight: $bold;
+            line-height: 1.5rem;
+            color: $grey;
           }
+        }
 
-          img {
-            width: 15rem;
-            margin: 0 auto;
-          }
-
-          .owl-carousel-item-imgoverlay {
-            position: initial;
-            opacity: 1;
-            margin: 2rem 0;
-            text-shadow: none;
-
-            .owl-carousel-item-imgcontent {
-              margin-top: .5rem;
-
-              p {
-                letter-spacing: .1rem;
-                text-shadow: none;
-                font-size: 1.4rem;
-              }
-
-            }
-          }
+        .title-advantage {
+          font-family: $title;
+          font-weight: $bold;
+          font-size: 2.2rem;
+          line-height: 3rem;
+          margin-bottom: 1.5rem;
         }
       }
     }
   }
-
-  .owl-controls {
-    .owl-pagination {
-      .owl-page {
-        > * {
-          background: $grey;
-        }
-      }
-    }
-  }
-}
-
-.wrap-team {
-  background-color: $grey-dark;
-  color: $white;
-}
-
-.wrap-team,
-.wrap-customer,
-.wrap-testimonial {
-  padding: 5rem 0;
 }
 
 .wrap-customer {
@@ -504,61 +508,6 @@
                     color: $black;
                   }
 
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.wrap-testimonial {
-  background-color: $white;
-
-  > * {
-    .owl-carousel-testimonials {
-      .owl-wrapper-outer {
-        .owl-wrapper {
-          .owl-item {
-            .item {
-              > * {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                  margin: 0;
-                  margin: 0 5rem;
-                }
-
-                .owl-carousel-item-imgoverlay {
-                  max-width: 100rem;
-                  display: flex;
-                  flex-flow: column nowrap;
-
-
-                  .owl-carousel-item-imgtitle {
-                    order: 2;
-                    color: $black;
-                    text-align: left;
-                    margin-top: 2rem;
-                    font-size: 1.8rem;
-                  }
-
-                  .owl-carousel-item-imgcontent {
-                    order: 1;
-                    font-size: 1.8rem;
-                    line-height: 2rem;
-                    font-style: italic;
-
-                    p {
-                      color: $black;
-                    }
-
-                  }
                 }
               }
             }
