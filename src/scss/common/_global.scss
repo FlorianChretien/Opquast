@@ -146,7 +146,7 @@ table {
 
 
 // General
-*{
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -230,6 +230,10 @@ img {
 
 .bg-green {
   background-color: $green;
+}
+
+.bg-greylight {
+  background-color: $bg;
 }
 
 .color-orange {
@@ -365,6 +369,68 @@ img {
 
         .container {
           margin: 0 auto 0 0;
+        }
+      }
+    }
+  }
+}
+
+.title-carousel {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.title-carousel {
+  @include title();
+}
+
+
+.owl-carousel {
+  .owl-wrapper-outer {
+    .owl-wrapper {
+      .owl-item {
+        .item {
+          text-align: center;
+
+          &:hover {
+            .owl-carousel-item-imgoverlay {
+              background: transparent;
+            }
+          }
+
+          img {
+            width: 15rem;
+            margin: 0 auto;
+          }
+
+          .owl-carousel-item-imgoverlay {
+            position: initial;
+            opacity: 1;
+            margin: 2rem 0;
+            text-shadow: none;
+
+            .owl-carousel-item-imgcontent {
+              margin-top: .5rem;
+
+              p {
+                letter-spacing: .1rem;
+                text-shadow: none;
+                font-size: 1.4rem;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .owl-controls {
+    .owl-pagination {
+      .owl-page {
+        > * {
+          background: $grey;
         }
       }
     }

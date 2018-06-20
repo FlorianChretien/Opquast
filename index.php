@@ -37,6 +37,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mouse_scroll">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="m_scroll_arrows unu"></span>
+                        <span class="m_scroll_arrows doi"></span>
+                        <span class="m_scroll_arrows trei"></span>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -61,7 +72,7 @@
                             </div>
                             <div class="text-feature">
                                 <h3 class="title-feature">6 experts du domaine du Web</h3>
-                                <p class="legend-feature">Depuis sa création, Opquast, est accompagnée par 6 experts pour développer au mieux ses outils et ses certifications. </p>
+                                <p class="legend-feature">Depuis sa création, Opquast, est accompagnée par 6 experts pour développer au mieux ses outils et ses certifications.</p>
                             </div>
                         </div>
                         <div class="feature">
@@ -193,7 +204,7 @@
             <div class="container">
                 <div class="text-service">
                     <h2 class="title-service">Check-lists</h2>
-                    <p class="subtitle-service">Depuis sa création, Opquast vise à devenir la référence en terme de qualité web. Nous développons donc des outils pour vous aider dans la réalisation de projet web de qualité. </p>
+                    <p class="subtitle-service">Depuis sa création, Opquast vise à devenir la référence en terme de qualité web. Nous développons donc des outils pour vous aider dans la réalisation de projet web de qualité.</p>
                 </div>
                 <div class="wrap-features">
                     <div class="feature">
@@ -226,6 +237,35 @@
                 </div>
                 <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
             </div>
+        </div>
+    </section>
+
+    <section class="wrap-social bg-greylight">
+        <div class="container">
+            <h2 class="title-social">Rejoignez notre communauté sur Slack</h2>
+
+            <div class="wrap-advantages">
+                <div class="advantage">
+                    <div class="wrap-number">
+                        <span class="number-checklist">1</span>
+                    </div>
+                    <h3 class="title-advantage">Échangez entre professionnels</h3>
+                </div>
+                <div class="advantage">
+                    <div class="wrap-number">
+                        <span class="number-checklist">2</span>
+                    </div>
+                    <h3 class="title-advantage">Un outil de veille puissant</h3>
+                </div>
+                <div class="advantage">
+                    <div class="wrap-number">
+                        <span class="number-checklist">3</span>
+                    </div>
+                    <h3 class="title-advantage">Aidez nous à faire avancer la qualité web</h3>
+                </div>
+            </div>
+
+            <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
         </div>
     </section>
 
