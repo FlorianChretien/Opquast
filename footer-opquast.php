@@ -38,6 +38,8 @@
     <?php
     wp_enqueue_script( 'script', get_template_directory_uri() . '/dist/js/main.min.js', true);
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_script('classie', get_template_directory_uri().'/dist/library/off-canvas-menu-effects/classie.js');
+    wp_enqueue_script('mainMenu', get_template_directory_uri().'/dist/library/off-canvas-menu-effects/mainMenu.js', array('classie'));
 
     wp_footer();
     ?>
