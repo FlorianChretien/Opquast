@@ -10,7 +10,7 @@
 
     .link-home {
       .img-logo {
-        width: 10rem;
+        width: 13rem;
       }
     }
 
@@ -19,6 +19,8 @@
     }
 
     .wrap-social {
+      padding: 0;
+
       .social-list {
         display: flex;
         flex-flow: row wrap;
@@ -27,8 +29,19 @@
           margin: 0 .5rem;
 
           .link-social {
+            margin: 0 .5rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+              .img-social {
+                color: $blue;
+              }
+            }
+
             .img-social {
-              width: 1.5rem;
+              font-size: 3rem;
+              color: $white;
             }
           }
         }
@@ -54,7 +67,8 @@
 
       .wrap-navigation {
         display: block;
-        .menu {
+
+        div[class^='menu'] {
           ul {
             display: flex;
             flex-flow: row wrap;
@@ -87,7 +101,7 @@
 
             .link-social {
               .img-social {
-                width: 4rem;
+                font-size: 4rem;
               }
             }
           }

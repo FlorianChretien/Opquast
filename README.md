@@ -8,3 +8,4 @@ Dans le theme faire un `yarn run watch`
 - Owl Carousel
 - Relevanssi
 - Wp Quiz
+- npm intall wowjs

@@ -16,21 +16,21 @@
 
                 <div class="wrap-anchors">
                     <div class="anchor">
-                        <span class="icon-certification img-anchor"></span>
+                        <span class="icon-certification img-anchor color-blue"></span>
                         <div class="text-anchors">
                             <p class="title-anchor">Certification</p>
                             <a href="#certification" class="btn btn-primary btn-sm">Découvrir</a>
                         </div>
                     </div>
                     <div class="anchor">
-                        <span class="icon-formations img-anchor"></span>
+                        <span class="icon-formations img-anchor color-orange"></span>
                         <div class="text-anchors">
                             <p class="title-anchor">Formations</p>
                             <a href="#formation" class="btn btn-primary btn-sm">Découvrir</a>
                         </div>
                     </div>
                     <div class="anchor">
-                        <span class="icon-check-lists img-anchor"></span>
+                        <span class="icon-check-lists img-anchor color-green"></span>
                         <div class="text-anchors">
                             <p class="title-anchor">Check-lists</p>
                             <a href="#check-list" class="btn btn-primary btn-sm">Découvrir</a>
@@ -55,17 +55,17 @@
     <section class="wrap-presentation">
             <div class="head-presentation">
                 <div class="container">
-                    <h2 class="title-presentation">L’entreprise bordelaise référence de la qualité Web</h2>
-                    <p class="text-presentation">Développé depuis 2004, sur des travaux commencés en 2000 dans le cadre de la société Temesis, Opquast est le pionnier mondial de la qualité Web.<br /> Notre objectif est d’améliorer la qualité des services en ligne grâce à nos <a href="#">différents outils</a>. En parallèle, la société a conçu des formations et une certification professionnalisante qui ont pour mission de valoriser et d’améliorer vos compétences en qualité web.</p>
+                    <h2 class="title-presentation wow fadeInLeftBig animated">L’entreprise bordelaise référence de la qualité Web</h2>
+                    <p class="text-presentation wow fadeInUp animated">Développé depuis 2004, sur des travaux commencés en 2000 dans le cadre de la société Temesis, Opquast est le pionnier mondial de la qualité Web.<br /> Notre objectif est d’améliorer la qualité des services en ligne grâce à nos <a href="#">différents outils</a>. En parallèle, la société a conçu des formations et une certification professionnalisante qui ont pour mission de valoriser et d’améliorer vos compétences en qualité web.</p>
                 </div>
             </div>
 
             <div class="content-presentation">
                 <div class="container">
-                    <h2 class="title-presentation">Opquast</h2>
+                    <h2 class="title-presentation wow fadeInRightBig animated">Opquast</h2>
 <!--                    <p class="subtitle-presentation">Cras hendrerit tortor erat, non suscipit nunc.</p>-->
 
-                    <div class="wrap-features">
+                    <div class="wrap-features wow fadeInUp animated">
                         <div class="feature">
                             <div class="wrap-icon">
                                 <span class="icon-experts icon-feature"></span>
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" title="Consulter la fiche de l'entreprise" class="btn btn-primary btn-lg">Découvrir Opquast</a>
+                    <a href="#" title="Consulter la fiche de l'entreprise" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir Opquast</a>
                 </div>
             </div>
     </section>
@@ -103,16 +103,16 @@
         <div class="img-service">
             <picture>
                 <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/certification.jpg">
-                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la certification">
+                <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/certification-mobile.jpg" alt="Image illustrant la certification">
             </picture>
         </div>
         <div class="content-service">
             <div class="container">
-                <div class="text-service">
+                <div class="text-service wow fadeInLeftBig animated">
                     <h2 class="title-service">Certification</h2>
                     <p class="subtitle-service">Booster votre carrière avec la certification Opquast : "Maîtrise de la qualité en projet Web". Évaluer vos compétences et apprenez à mener un projet web de qualité. Pour connaître votre niveau, répondez aux 10 questions du <a href="#">mini-test</a>.</p>
                 </div>
-                <div class="wrap-features">
+                <div class="wrap-features wow fadeInUp animated">
                     <div class="feature">
                         <div class="wrap-icon">
                             <span class="icon-expertise icon-feature"></span>
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
+                <a href="#" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
             </div>
         </div>
     </section>
@@ -150,16 +150,16 @@
         <div class="img-service">
             <picture>
                 <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/formation.jpg">
-                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la formation">
+                <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/formation-mobile.jpg" alt="Image illustrant la formation">
             </picture>
         </div>
         <div class="content-service">
             <div class="container">
-                <div class="text-service">
+                <div class="text-service wow fadeInRightBig animated">
                     <h2 class="title-service">Formations</h2>
                     <p class="subtitle-service">Préparez vos équipes au futur projet web grâce à nos deux formations. C’est l’occasion d'améliorer le dialogue en interne en adoptant le même langage. Pour valider les compétences acquises vos employés finiront par la certification.</p>
                 </div>
-                <div class="wrap-features">
+                <div class="wrap-features wow fadeInUp animated">
                     <div class="feature">
                         <div class="wrap-icon">
                             <span class="icon-trainings icon-feature"></span>
@@ -188,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
+                <a href="#" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
             </div>
         </div>
     </section>
@@ -197,16 +197,16 @@
         <div class="img-service">
             <picture>
                 <source media="(min-width: 640px)" srcset="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/checklist.jpg">
-                <img src="http://via.placeholder.com/375x130" alt="Image illustrant la check-list">
+                <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/checklist-mobile.jpg" alt="Image illustrant la check-list">
             </picture>
         </div>
         <div class="content-service">
             <div class="container">
-                <div class="text-service">
+                <div class="text-service wow fadeInLeftBig animated">
                     <h2 class="title-service">Check-lists</h2>
                     <p class="subtitle-service">Depuis sa création, Opquast vise à devenir la référence en terme de qualité web. Nous développons donc des outils pour vous aider dans la réalisation de projet web de qualité.</p>
                 </div>
-                <div class="wrap-features">
+                <div class="wrap-features wow fadeInUp animated">
                     <div class="feature">
                         <div class="wrap-icon">
                             <span class="icon-free icon-feature"></span>
@@ -235,16 +235,16 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
+                <a href="#" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
             </div>
         </div>
     </section>
 
     <section class="wrap-social bg-greylight">
         <div class="container">
-            <h2 class="title-social">Rejoignez notre communauté sur Slack</h2>
+            <h2 class="title-social wow fadeInRightBig animated">Rejoignez notre communauté sur Slack</h2>
 
-            <div class="wrap-advantages">
+            <div class="wrap-advantages wow fadeInUp animated">
                 <div class="advantage">
                     <div class="wrap-number">
                         <span class="number-checklist">1</span>
@@ -265,28 +265,34 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
+            <a href="#" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
         </div>
     </section>
 
     <section class="wrap-team">
         <div class="container">
-            <h2 class="title-carousel">Notre équipe</h2>
-            <?php echo do_shortcode('[owl-carousel category="team" singleItem="false" autoPlay="true"]'); ?>
+            <h2 class="title-carousel wow fadeInRightBig animated">Notre équipe</h2>
+            <div class="wow fadeInUp animated">
+                <?php echo do_shortcode('[owl-carousel category="team" singleItem="false" autoPlay="true"]'); ?>
+            </div>
         </div>
     </section>
 
     <section class="wrap-customer">
         <div class="container">
-            <h2 class="title-carousel">Ils nous ont fait confiance</h2>
-            <?php echo do_shortcode('[owl-carousel category="customers" singleItem="true" autoPlay="true"]'); ?>
+            <h2 class="title-carousel wow fadeInRightBig animated">Ils nous ont fait confiance</h2>
+            <div class="wow fadeInUp animated">
+                <?php echo do_shortcode('[owl-carousel category="customers" singleItem="true" autoPlay="true"]'); ?>
+            </div>
         </div>
     </section>
 
     <section class="wrap-testimonial">
         <div class="container">
-            <h2 class="title-carousel">Témoignages</h2>
-            <?php echo do_shortcode('[owl-carousel category="testimonials" singleItem="true" autoPlay="false"]'); ?>
+            <h2 class="title-carousel wow fadeInRightBig animated">Témoignages</h2>
+            <div class="wow fadeInUp animated">
+                <?php echo do_shortcode('[owl-carousel category="testimonials" singleItem="true" autoPlay="false"]'); ?>
+            </div>
         </div>
     </section>
 

@@ -1,11 +1,12 @@
 // mobile first
 .wrap-overview {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background-color: $white;
+  border-top-left-radius: 80% 40%;
+  border-top-right-radius: 80% 40%;
 
   .container {
     display: flex;
-    flex-flow: column-reverse wrap;
+    flex-flow: column wrap;
 
     .head-overview {
       .text-overview {
@@ -34,78 +35,77 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        margin-top: 3rem;
+        align-items: center;
+        margin-top: 2rem;
 
         .btn {
           @include btn($orange, $white);
+          font-size: 1.3rem;
+          margin: .5rem;
         }
       }
 
       @media (min-width: 640px) {
         .button-overview {
           justify-content: start;
+
+          .btn {
+            font-size: 1.8rem;
+            margin: 1rem;
+          }
         }
       }
     }
 
     .wrap-anchors {
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: column wrap;
       justify-content: center;
-      background-color: $white;
-      -moz-box-shadow: 0 0 1rem 0 $grey;
-      -webkit-box-shadow: 0 0 1rem 0 $grey;
-      -o-box-shadow: 0 0 1rem 0 $grey;
-      box-shadow: 0 0 1rem 0 $grey;
-      filter:progid:DXImageTransform.Microsoft.Shadow(color=$grey, Direction=NaN, Strength=10);
-      border-radius: 1rem;
       width: 100%;
       padding: 3rem 0;
-      height: 24.5rem;
 
       .anchor {
+        margin: 1rem 0;
+        background-color: $white;
+        -moz-box-shadow: 0 0 1rem 0 #dedede;
+        -webkit-box-shadow: 0 0 1rem 0 #dedede;
+        -o-box-shadow: 0 0 1rem 0 #dedede;
+        box-shadow: 0 0 1rem 0 #dedede;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#dedede, Direction=NaN, Strength=10);
+        border-radius: 1rem;
+        border-left: 2rem solid $grey;
         width: 100%;
-        padding: 0 2rem;
+        padding: 2rem;
         flex-grow: 1;
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-end;
+        flex-flow: row nowrap;
+        justify-content: space-around;
         align-items: center;
-        text-align: center;
 
         &:nth-of-type(1) {
-          .img-anchor {
-            color: $blue;
-          }
+          border-color: $blue;
+          color: $blue;
         }
 
         &:nth-of-type(2) {
-          .img-anchor {
-            color: $orange;
-          }
+          border-color: $orange;
+          color: $orange;
         }
 
         &:nth-of-type(3) {
-          .img-anchor {
-            color: $green;
-          }
-        }
-
-        &:not(:last-child) {
-          border-right: .1rem solid $grey-dark;
+          border-color: $green;
+          color: $green;
         }
 
         .img-anchor {
-          font-size: 4.5rem;
-          width: 4.5rem;
+          font-size: 6rem;
         }
 
         .text-anchors {
-          margin-top: 1rem;
           text-align: center;
 
           .title-anchor {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             font-weight: $bold;
             text-transform: uppercase;
           }
@@ -117,16 +117,41 @@
       .wrap-anchors {
         max-width: 81rem;
         margin: 5rem auto 5rem auto;
+        flex-flow: row nowrap;
+        background-color: $white;
+        -moz-box-shadow: 0 0 1rem 0 #dedede;
+        -webkit-box-shadow: 0 0 1rem 0 #dedede;
+        -o-box-shadow: 0 0 1rem 0 #dedede;
+        box-shadow: 0 0 1rem 0 #dedede;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#dedede, Direction=NaN, Strength=10);
+        border-radius: 1rem;
+        height: 25rem;
 
         .anchor {
+          border: none;
+          margin: 0;
+          padding: 0 2rem;
+          background-color: transparent;
+          box-shadow: none;
+          flex-flow: column nowrap;
+          align-items: center;
+          text-align: center;
+          border-radius: 0;
+
+          &:not(:last-child) {
+            border-right: .1rem solid $grey;
+          }
+
           .img-anchor {
             font-size: 10rem;
             width: 10rem;
+            margin-bottom: 1.5rem;
           }
 
           .text-anchors {
             .title-anchor {
               font-size: 1.8rem;
+              color: $black;
             }
 
             .btn {
@@ -307,6 +332,8 @@
   .wrap-overview {
     height: calc(100vh - 12.5rem);
     padding-top: 4rem;
+    background-color: transparent;
+    border: none;
   }
 }
 
@@ -441,6 +468,7 @@
 
     .wrap-advantages {
       display: flex;
+      flex-flow: column wrap;
       justify-content: space-around;
       margin: 2rem 0;
 
@@ -450,7 +478,7 @@
 
       .advantage {
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         align-items: center;
 
         .wrap-number {
@@ -461,6 +489,7 @@
           width: 7.5rem;
           height: 7.5rem;
           margin-bottom: 2rem;
+          margin-right: 4.5rem;
 
           .number-checklist {
             font-size: 3rem;
