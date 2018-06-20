@@ -1,4 +1,7 @@
 .header {
+  background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/overview.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
   overflow: hidden;
   position: relative;
   top: 0;
@@ -8,10 +11,6 @@
 
   #bg-video {
     background-color: $bg;
-    background-image: url("http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/overview.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
     width: 100%;
     height: 100%;
     position: absolute;
@@ -44,6 +43,12 @@
       left: 0;
       object-fit: cover;
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .header {
+    background: transparent;
   }
 }
 
@@ -88,16 +93,16 @@
 
 .wrap-header {
   .container {
+    position: relative;
     padding: 1rem 2rem;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     .brand {
-      .img-logo {
-        width: 10rem;
-      }
+      margin-top: 8rem;
+      width: calc(100% - 4rem);
 
       @media (min-width: 640px) {
         .img-logo {
@@ -107,6 +112,9 @@
     }
 
     .wrap-links {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
       display: flex;
       align-items: center;
 
@@ -117,7 +125,7 @@
       .primary-nav {
         display: none;
 
-        .menu {
+        div[class ^= "menu"] {
           ul {
             li {
               a {
@@ -158,6 +166,7 @@
       }
 
       .link-login {
+        display: none;
         order: 2;
       }
 
@@ -342,22 +351,27 @@
 
   @media (min-width: 640px) {
     .container {
-      padding: 3rem 7rem;
-
-      #menu-btn {
-        order: 4;
-      }
+      padding: 3rem;
+      position: initial;
+      justify-content: space-between;
 
       .brand {
+        margin: 0;
         order: 1;
+        width: 20rem;
       }
 
-      .primary-nav {
-        order: 2;
-      }
+      .wrap-links {
+        position: initial;
 
-      .link-login {
-        order: 3;
+
+        .link-login {
+          order: 3;
+        }
+
+        #menu-btn {
+          order: 4;
+        }
       }
     }
   }

@@ -2,33 +2,33 @@
         <div class="container">
             <a href="http://127.0.0.1:8080/edsa-opquast-brown/" class="link-home">
                 <!--            <img src="http://localhost/_ECVDigital/opquast/wp-content/uploads/2018/06/logo_opquast_no-baseline.png" alt="Logotype Opquast" class="img-logo">-->
-                <img src="http://127.0.0.1:8080/edsa-opquast-brown/wp-content/uploads/2018/06/logo_opquast_no-baseline_white.png" alt="Logotype Opquast" class="img-logo">
+                <img src="<?php echo get_site_url() ?>/wp-content/uploads/2018/06/logo_opquast_no-baseline_white.png" alt="Logotype Opquast" class="img-logo">
             </a>
 
             <nav role="navigation" class="wrap-navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu' => 'Menu 1') ); ?>
             </nav>
 
             <section class="wrap-social">
                 <ul class="social-list">
                     <li class="item-social">
-                        <a href="#" class="link-social">
-                            <img src="http://via.placeholder.com/15x15" alt="Facebook" class="img-social">
+                        <a href="https://fr-fr.facebook.com/opquast/" title="Facebook" class="link-social">
+                            <span class="img-social icon-facebook"></span>
                         </a>
                     </li>
                     <li class="item-social">
-                        <a href="#" class="link-social">
-                            <img src="http://via.placeholder.com/15x15" alt="Twitter" class="img-social">
+                        <a href="https://twitter.com/opquast" title="Twitter" class="link-social">
+                            <span class="img-social icon-twitter"></span>
                         </a>
                     </li>
                     <li class="item-social">
-                        <a href="#" class="link-social">
-                            <img src="http://via.placeholder.com/15x15" alt="Linkedin" class="img-social">
+                        <a href="https://fr.linkedin.com/company/opquast" title="Linkedin" class="link-social">
+                            <span class="img-social icon-linkedin"></span>
                         </a>
                     </li>
                     <li class="item-social">
-                        <a href="#" class="link-social">
-                            <img src="http://via.placeholder.com/15x15" alt="Slack" class="img-social">
+                        <a href="#" title="Slack" class="link-social">
+                            <span class="img-social icon-slack"></span>
                         </a>
                     </li>
                 </ul>

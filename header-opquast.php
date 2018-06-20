@@ -11,14 +11,16 @@
         <?php wp_enqueue_script("jquery"); ?>
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/jquery-3.3.1.min.js"></script>
         <?php wp_head(); ?>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/wow.min.js"></script>
+        <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/detectmobilebrowser.js"></script>
     </head>
     <body>
-        <div class="header <?php if($post_slug != "accueil") echo 'header-inverse'; ?>">
+        <div class="header<?php if($post_slug != "accueil") echo ' header-inverse'; ?>">
         <?php
-        switch ($post_slug){
+        switch ($post_slug) {
             case 'accueil':
-                echo ' <video autoplay loop muted id="bg-video">
-                        <source src="'.get_site_url().'/wp-content/uploads/2018/06/White-Keyboard.mp4" type="video/mp4">
+                echo ' <video autoplay loop muted id="bg-video" data-src="'.get_site_url().'/wp-content/uploads/2018/06/White-Keyboard">
                        </video>';
                 break;
         }
@@ -47,7 +49,7 @@
 
                 <div class="wrap-links">
                     <nav role="navigation" class="primary-nav">
-                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu') ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu' => 'Menu 1') ); ?>
                     </nav>
 
                     <a href="<?php echo get_site_url() ?>/login/" class="link-login btn btn-primary">Connexion</a>
