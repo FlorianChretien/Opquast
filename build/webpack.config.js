@@ -3,7 +3,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')  ;
 const autoprefixer = require('autoprefixer')  ;
 
 module.exports = {
-  entry: ['./src/js/main.js', './src/js/library/off-canvas-menu-effects/mainMenu.js', './src/scss/style.scss'],
+  entry: [
+      './src/js/main.js',
+      './src/js/library/detectmobilebrowser/detectmobilebrowser.js',
+      './src/scss/style.scss'
+  ],
   output: {
     filename: './dist/js/main.min.js',
 
