@@ -13,6 +13,7 @@
         <?php wp_head(); ?>
     </head>
     <body>
+
         <div id="menu-burger">
             <div class="menu-wrap">
                 <div>
@@ -36,14 +37,12 @@
             </div>
             <button class="menu-button" id="open-button">Open Menu</button>
         </div>
-        <div class="content-wrap">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/wow.min.js"></script>
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/detectmobilebrowser.js"></script>
         <?php wp_enqueue_script('snap.svg-min', get_template_directory_uri().'dist/library/off-canvas-menu-effects/snap.svg-min.js'); ?>
-    </head>
-    <body>
+
         <div class="header<?php if($post_slug != "accueil") echo ' header-inverse'; ?>">
         <?php
         switch ($post_slug) {
