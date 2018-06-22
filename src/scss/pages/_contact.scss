@@ -1,0 +1,86 @@
+.wrap-contact {
+  background-color: $bg;
+
+  > .container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+
+    &:before {
+      content: "Contactez-nous";
+      font-family: $title;
+      font-size: 2.5rem;
+    }
+
+    > * {
+      flex-grow: 1;
+      width: 100%;
+      margin: 2rem 0;
+
+      &.wrap-form {
+        order: 2;
+
+        > * {
+          display: flex;
+          flex-flow: column wrap;
+
+          p {
+            margin: 1.5rem 0;
+          }
+
+          input[type="submit"] {
+            cursor: pointer;
+            @include btn($grey, $white);
+          }
+        }
+      }
+
+      &.wrap-map {
+        order: 1;
+
+        > * {
+          height: 30rem !important;
+        }
+      }
+    }
+
+  }
+}
+
+@media (min-width: 640px) {
+  .wrap-contact {
+    padding: 8rem 0;
+
+    > .container {
+      flex-flow: row nowrap;
+      align-items: center;
+
+      &:before {
+        content: "";
+      }
+
+      > * {
+        margin: 0 2rem;
+
+        &.wrap-form {
+          order: 1;
+
+          &:before {
+            content: "Contactez-nous";
+            font-family: $title;
+            font-size: 2.5rem;
+          }
+        }
+
+        &.wrap-map {
+          order: 2;
+
+          > * {
+            height: 55rem !important;
+          }
+        }
+      }
+    }
+  }
+
+}

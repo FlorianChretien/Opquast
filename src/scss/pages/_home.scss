@@ -326,11 +326,15 @@
       flex-direction: column;
     }
   }
+
+  &.internal-page {
+    background: transparent;
+    border: none;
+  }
 }
 
 @media (min-width: 640px) {
   .wrap-overview {
-    height: calc(100vh - 12.5rem);
     padding-top: 4rem;
     background-color: transparent;
     border: none;

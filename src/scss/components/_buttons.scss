@@ -1,4 +1,6 @@
 @mixin btn($color, $txt) {
+  cursor: pointer;
+  outline: none;
   font-family: $title;
   font-size: 1.8rem;
   font-weight: $semi-bold;

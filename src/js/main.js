@@ -19,6 +19,7 @@ $(document).ready(function() {
     } else {
       if ($(window).width() > breakpoint) {
         if ($('#bg-video > *').length < 1) {
+          console.log("ok");
           $("body > .header").append("<video autoplay loop muted id='bg-video' data-src='" + srcVideo + "'><source src='" + srcVideo + ".mp4' type='video/mp4'><source src='" + srcVideo + ".webm' type='video/webm'><source src='" + srcVideo + ".ogv' type='video/ogv'></video>");
         }
         // Play the video
