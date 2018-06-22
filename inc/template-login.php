@@ -36,5 +36,8 @@ get_header('connexion');
     </section>
 </div>
 
-<?php get_footer('connexion'); ?>
+<?php 
+remove_action( 'wp_footer', 'shiftnav_direct_injection' );
+get_footer('connexion'); 
+?>
 
