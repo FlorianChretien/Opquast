@@ -12,8 +12,11 @@
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/jquery-3.3.1.min.js"></script>
         <?php wp_head(); ?>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <?php wp_enqueue_script("detectmobilebrowser", get_template_directory_uri().'/src/js/library/detectmobilebrowser/detectmobilebrowser.js'); ?>
     </head>
     <body>
+        <?php shiftnav_toggle( 'shiftnav-main' , 'Toggle Menu' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>
+        <a class="shiftnav-toggle shiftnav-toggle-button" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i> Toggle Menu </a>
         <?php do_action('website_before'); ?>
         <div class="header<?php if($post_slug != "accueil") echo ' header-inverse'; ?>">
         <?php
@@ -24,7 +27,6 @@
                 break;
         }
         ?>
-
         <header class="wrap-header">
             <div class="container">
                 <a href="<?php echo get_site_url() ?>" class="brand">
@@ -42,6 +44,9 @@
                         case 'accueil':
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
+                        /*case 'mini-test':
+                            echo ""
+                            https://florian-chretien.fr/opquast/wp-content/uploads/2018/06/logo_opquast_no-baseline_white.png*/
                     }
                     ?>
                 </a>
@@ -50,8 +55,6 @@
                     <nav role="navigation" class="primary-nav">
                         <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu' => 'Menu 1') ); ?>
                     </nav>
-
-                    <a href="<?php echo get_site_url() ?>/login/" class="link-login btn btn-primary">Connexion</a>
                 </div>
             </div>
         </header>
