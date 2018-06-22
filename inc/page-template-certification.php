@@ -44,7 +44,7 @@
     <section class="wrap-target" id="professional">
         <div class="container">
             <h2 class="title-target">Professionnels</h2>
-            <span class="icon-professional icon-target"></span>
+            <span class="icon-professional img-target"></span>
             <p class="text-target">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium quis urna eu finibus. Nulla ut nisl ac tellus egestas aliquam. Suspendisse aliquet aliquam ornare. Vestibulum convallis mi enim, viverra congue libero consequat id. Ut ac finibus elit. Etiam mattis sit amet velit id ultrices. Praesent nec leo felis. In eleifend orci neque, eget suscipit augue pulvinar et. Aliquam vel justo nisi.<br/>
                 Vestibulum aliquam odio nulla, vel convallis orci finibus at. Curabitur dapibus urna et augue tempor pharetra eget ut nunc. Donec lobortis hendrerit tristique. Maecenas scelerisque leo non nisl vulputate imperdiet. Morbi orci urna, convallis in metus sed, placerat aliquet nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium lectus id ex lacinia fermentum. Duis aliquam ligula eget iaculis semper. Duis ac enim nibh. Donec a urna rutrum, viverra arcu a, venenatis lectus. Sed id eros leo. Morbi nulla sem, volutpat suscipit velit ac, blandit tristique turpis. Nulla eu varius enim, placerat consectetur massa.
@@ -56,7 +56,7 @@
     <section class="wrap-target" id="school">
         <div class="container">
             <h2 class="title-target">Écoles</h2>
-            <span class="icon-school icon-target"></span>
+            <span class="icon-school img-target"></span>
             <p class="text-target">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium quis urna eu finibus. Nulla ut nisl ac tellus egestas aliquam. Suspendisse aliquet aliquam ornare. Vestibulum convallis mi enim, viverra congue libero consequat id. Ut ac finibus elit. Etiam mattis sit amet velit id ultrices. Praesent nec leo felis. In eleifend orci neque, eget suscipit augue pulvinar et. Aliquam vel justo nisi.<br/>
                 Vestibulum aliquam odio nulla, vel convallis orci finibus at. Curabitur dapibus urna et augue tempor pharetra eget ut nunc. Donec lobortis hendrerit tristique. Maecenas scelerisque leo non nisl vulputate imperdiet. Morbi orci urna, convallis in metus sed, placerat aliquet nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium lectus id ex lacinia fermentum. Duis aliquam ligula eget iaculis semper. Duis ac enim nibh. Donec a urna rutrum, viverra arcu a, venenatis lectus. Sed id eros leo. Morbi nulla sem, volutpat suscipit velit ac, blandit tristique turpis. Nulla eu varius enim, placerat consectetur massa.
@@ -68,7 +68,7 @@
     <section class="wrap-target" id="independant">
         <div class="container">
             <h2 class="title-target">Indépendants</h2>
-            <span class="icon-independent icon-target"></span>
+            <span class="icon-independent img-target"></span>
             <p class="text-target">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pretium quis urna eu finibus. Nulla ut nisl ac tellus egestas aliquam. Suspendisse aliquet aliquam ornare. Vestibulum convallis mi enim, viverra congue libero consequat id. Ut ac finibus elit. Etiam mattis sit amet velit id ultrices. Praesent nec leo felis. In eleifend orci neque, eget suscipit augue pulvinar et. Aliquam vel justo nisi.<br/>
                 Vestibulum aliquam odio nulla, vel convallis orci finibus at. Curabitur dapibus urna et augue tempor pharetra eget ut nunc. Donec lobortis hendrerit tristique. Maecenas scelerisque leo non nisl vulputate imperdiet. Morbi orci urna, convallis in metus sed, placerat aliquet nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium lectus id ex lacinia fermentum. Duis aliquam ligula eget iaculis semper. Duis ac enim nibh. Donec a urna rutrum, viverra arcu a, venenatis lectus. Sed id eros leo. Morbi nulla sem, volutpat suscipit velit ac, blandit tristique turpis. Nulla eu varius enim, placerat consectetur massa.
