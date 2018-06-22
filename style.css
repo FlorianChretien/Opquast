@@ -11,13 +11,22 @@
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
-input {
-  border-radius: 10px;
-  padding: 10px;
-  border: 2px solid #323b44;
+label {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: #4e5966 !important;
+  text-transform: uppercase; }
+
+input,
+textarea {
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 0.2rem solid #323b44;
   background-color: #fff;
-  width: 100%;
-  height: 50px; }
+  width: 100%; }
+
+input {
+  height: 5rem; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -203,6 +212,105 @@ a {
   a:hover, a:focus, a:active {
     font-weight: 700; }
 
+input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  display: block;
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  border-radius: 1rem;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  background: #4e5966;
+  color: #fff;
+  -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
+  -o-box-shadow: 0 0 0.5rem 0 #323b44;
+  box-shadow: 0 0 0.5rem 0 #323b44;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$grey-dark, Direction=NaN, Strength=5); }
+  input[type="submit"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.2rem solid #4e5966;
+    z-index: -1;
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transform: scale3d(0.6, 0.6, 1);
+    transform: scale3d(0.6, 0.6, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+  input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+    background-color: transparent;
+    color: #4e5966;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    input[type="submit"]:hover:before, input[type="submit"]:focus:before, input[type="submit"]:active:before {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      opacity: 1; }
+  input[type="submit"].btn-inverse {
+    background: transparent;
+    border: 0.2rem solid #4e5966;
+    color: #4e5966;
+    padding: 1.8rem 2.3rem 1.3rem 2.3rem;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    input[type="submit"].btn-inverse:before {
+      background: #4e5966;
+      -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
+      -o-box-shadow: 0 0 0.5rem 0 #323b44;
+      box-shadow: 0 0 0.5rem 0 #323b44;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=$grey-dark, Direction=NaN, Strength=5); }
+    input[type="submit"].btn-inverse:hover, input[type="submit"].btn-inverse:focus, input[type="submit"].btn-inverse:active {
+      color: #fff;
+      border: none; }
+  input[type="submit"].btn-sm {
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem 1rem 2rem; }
+
+nav div[class^="menu"] ul li a {
+  position: relative;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+  nav div[class^="menu"] ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    content: '.';
+    color: transparent;
+    background: #333331;
+    height: .2rem;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+  nav div[class^="menu"] ul li a:hover:after, nav div[class^="menu"] ul li a:active:after, nav div[class^="menu"] ul li a:focus:after {
+    width: 100%; }
+
 img {
   width: 100%; }
 
@@ -220,6 +328,8 @@ img {
     padding: 0 7rem; } }
 
 .btn {
+  cursor: pointer;
+  outline: none;
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-weight: 600;
@@ -611,9 +721,12 @@ img {
     background: transparent; } }
 
 .header-inverse {
+  background: none;
   background-color: #4e5966; }
   .header-inverse a {
     color: #fff; }
+  .header-inverse .wrap-header .container .brand {
+    margin: 0; }
   .header-inverse .wrap-header .container .wrap-links .primary-nav .menu ul li a:after {
     background: #fff; }
   .header-inverse .wrap-header .container .wrap-links #menu-btn:before, .header-inverse .wrap-header .container .wrap-links #menu-btn:after {
@@ -1549,6 +1662,8 @@ header {
               align-items: center;
       margin-top: 2rem; }
       .wrap-overview .container .head-overview .button-overview .btn {
+        cursor: pointer;
+        outline: none;
         font-family: "Raleway", Arial, Helvetica, sans-serif;
         font-size: 1.8rem;
         font-weight: 600;
@@ -1726,6 +1841,8 @@ header {
             color: #333331; }
           .wrap-overview .container .wrap-anchors .anchor .text-anchors .btn {
             opacity: 0;
+            cursor: pointer;
+            outline: none;
             font-family: "Raleway", Arial, Helvetica, sans-serif;
             font-size: 1.8rem;
             font-weight: 600;
@@ -1894,10 +2011,12 @@ header {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+  .wrap-overview.internal-page {
+    background: transparent;
+    border: none; }
 
 @media (min-width: 640px) {
   .wrap-overview {
-    height: calc(100vh - 12.5rem);
     padding-top: 4rem;
     background-color: transparent;
     border: none; } }
@@ -2156,6 +2275,8 @@ header {
     .wrap-overview.internal-page .container .head-overview .text-overview .baseline-overview {
       line-height: 2.5rem; }
   .wrap-overview.internal-page .container .head-overview .button-overview .btn {
+    cursor: pointer;
+    outline: none;
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
@@ -2476,3 +2597,148 @@ header {
   @media (min-width: 1800px) {
     .wrap-prices > * > .price {
       margin: 5rem; } }
+
+.wrap-contact {
+  background-color: #e8eff7; }
+  .wrap-contact > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    width: 100%; }
+    .wrap-contact > .container:before {
+      content: "Contactez-nous";
+      font-family: "Raleway", Arial, Helvetica, sans-serif;
+      font-size: 2.5rem; }
+    .wrap-contact > .container > * {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      width: 100%;
+      margin: 2rem 0; }
+      .wrap-contact > .container > *.wrap-form {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+        .wrap-contact > .container > *.wrap-form > * {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: column wrap;
+                  flex-flow: column wrap; }
+          .wrap-contact > .container > *.wrap-form > * p {
+            margin: 1.5rem 0; }
+          .wrap-contact > .container > *.wrap-form > * input[type="submit"] {
+            cursor: pointer;
+            cursor: pointer;
+            outline: none;
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            display: block;
+            text-align: center;
+            margin: 1rem;
+            padding: 2rem 2.5rem 1.5rem 2.5rem;
+            vertical-align: middle;
+            position: relative;
+            z-index: 1;
+            border-radius: 1rem;
+            -webkit-transition: background-color 0.3s, color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
+            background: #4e5966;
+            color: #fff;
+            -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
+            -o-box-shadow: 0 0 0.5rem 0 #323b44;
+            box-shadow: 0 0 0.5rem 0 #323b44;
+            filter: progid:DXImageTransform.Microsoft.Shadow(color=$grey-dark, Direction=NaN, Strength=5); }
+            .wrap-contact > .container > *.wrap-form > * input[type="submit"]:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border: 0.2rem solid #4e5966;
+              z-index: -1;
+              border-radius: inherit;
+              opacity: 0;
+              -webkit-transform: scale3d(0.6, 0.6, 1);
+              transform: scale3d(0.6, 0.6, 1);
+              -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+              -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+              transition: opacity 0.3s, -webkit-transform 0.3s;
+              transition: transform 0.3s, opacity 0.3s;
+              transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+              -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+              transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); }
+            .wrap-contact > .container > *.wrap-form > * input[type="submit"]:hover, .wrap-contact > .container > *.wrap-form > * input[type="submit"]:focus, .wrap-contact > .container > *.wrap-form > * input[type="submit"]:active {
+              background-color: transparent;
+              color: #4e5966;
+              -webkit-box-shadow: none;
+                      box-shadow: none; }
+              .wrap-contact > .container > *.wrap-form > * input[type="submit"]:hover:before, .wrap-contact > .container > *.wrap-form > * input[type="submit"]:focus:before, .wrap-contact > .container > *.wrap-form > * input[type="submit"]:active:before {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                opacity: 1; }
+            .wrap-contact > .container > *.wrap-form > * input[type="submit"].btn-inverse {
+              background: transparent;
+              border: 0.2rem solid #4e5966;
+              color: #4e5966;
+              padding: 1.8rem 2.3rem 1.3rem 2.3rem;
+              -webkit-box-shadow: none;
+                      box-shadow: none; }
+              .wrap-contact > .container > *.wrap-form > * input[type="submit"].btn-inverse:before {
+                background: #4e5966;
+                -webkit-box-shadow: 0 0 0.5rem 0 #323b44;
+                -o-box-shadow: 0 0 0.5rem 0 #323b44;
+                box-shadow: 0 0 0.5rem 0 #323b44;
+                filter: progid:DXImageTransform.Microsoft.Shadow(color=$grey-dark, Direction=NaN, Strength=5); }
+              .wrap-contact > .container > *.wrap-form > * input[type="submit"].btn-inverse:hover, .wrap-contact > .container > *.wrap-form > * input[type="submit"].btn-inverse:focus, .wrap-contact > .container > *.wrap-form > * input[type="submit"].btn-inverse:active {
+                color: #fff;
+                border: none; }
+            .wrap-contact > .container > *.wrap-form > * input[type="submit"].btn-sm {
+              font-size: 1.2rem;
+              padding: 1.5rem 2rem 1rem 2rem; }
+      .wrap-contact > .container > *.wrap-map {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+        .wrap-contact > .container > *.wrap-map > * {
+          height: 30rem !important; }
+
+@media (min-width: 640px) {
+  .wrap-contact {
+    padding: 8rem 0; }
+    .wrap-contact > .container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .wrap-contact > .container:before {
+        content: ""; }
+      .wrap-contact > .container > * {
+        margin: 0 2rem; }
+        .wrap-contact > .container > *.wrap-form {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+          .wrap-contact > .container > *.wrap-form:before {
+            content: "Contactez-nous";
+            font-family: "Raleway", Arial, Helvetica, sans-serif;
+            font-size: 2.5rem; }
+        .wrap-contact > .container > *.wrap-map {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
+          .wrap-contact > .container > *.wrap-map > * {
+            height: 55rem !important; } }

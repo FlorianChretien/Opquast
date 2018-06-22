@@ -265,7 +265,7 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
+            <a href="https://opquast-community.slack.com/" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
         </div>
     </section>
 

@@ -53,6 +53,7 @@
 }
 
 .header-inverse {
+  background: none;
   background-color: $grey;
 
   a {
@@ -61,6 +62,10 @@
 
   .wrap-header {
     .container {
+      .brand {
+        margin: 0;
+      }
+
       .wrap-links {
         .primary-nav {
           .menu {

@@ -43,5 +43,8 @@
 
     wp_footer();
     ?>
+    <script async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgFf-er2mba4V3HG0awy_w7M13nlrNtaY&callback=initMap"></script>
 </body>
 </html>
