@@ -1,3 +1,5 @@
+import WOW from 'wowjs';
+
 $(document).ready(function() {
   var video = $('#bg-video');
   var srcVideo = $("#bg-video").data("src");
@@ -31,7 +33,7 @@ $(document).ready(function() {
   }
 
 
-  new WOW().init();
+  new WOW.WOW().init();
 
 
   var button = $("#menu-btn");
