@@ -1,6 +1,6 @@
 <?php get_header('opquast') ?>
 
-        <section class="wrap-overview">
+         <section class="wrap-overview">
             <div class="container">
                 <div class="head-overview">
                     <div class="text-overview">
@@ -10,7 +10,7 @@
 
                     <div class="button-overview">
                         <a href="#" class="btn btn-primary btn-lg">Découvrir</a>
-                        <a href="#" class="btn btn-primary btn-lg btn-inverse">Test gratuit</a>
+                        <a href="<?php echo get_site_url().'/index.php/mini-test/' ?>" class="btn btn-primary btn-lg btn-inverse">Test gratuit</a>
                     </div>
                 </div>
 
@@ -63,9 +63,9 @@
             <div class="content-presentation">
                 <div class="container">
                     <h2 class="title-presentation wow fadeInRightBig animated">Opquast</h2>
-<!--                    <p class="subtitle-presentation">Cras hendrerit tortor erat, non suscipit nunc.</p>-->
+                    <!--<p class="subtitle-presentation">Cras hendrerit tortor erat, non suscipit nunc.</p>-->
 
-                    <div class="wrap-features wow fadeInUp animated">
+                     <div class="wrap-features wow fadeInUp animated">
                         <div class="feature">
                             <div class="wrap-icon">
                                 <span class="icon-experts icon-feature"></span>
@@ -265,7 +265,7 @@
                 </div>
             </div>
 
-            <a href="#" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
+            <a href="https://opquast-community.slack.com/" class="btn btn-primary btn-lg wow fadeInUp animated">Découvrir</a>
         </div>
     </section>
 

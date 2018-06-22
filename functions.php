@@ -33,7 +33,7 @@ add_action('wp_enqueue_scripts', 'enqueue_script');
 
 function dequeue_script() {
   if(!is_admin()) {
-    /*wp_deregister_script('jquery');*/
+    // wp_deregister_script('jquery');
     wp_deregister_script('wp-embed');
   }
 }

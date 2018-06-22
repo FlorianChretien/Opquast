@@ -11,8 +11,11 @@
         <?php wp_enqueue_script("jquery"); ?>
         <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/src/js/jquery-3.3.1.min.js"></script>
         <?php wp_head(); ?>
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <?php wp_enqueue_script("detectmobilebrowser", get_template_directory_uri().'/src/js/library/detectmobilebrowser/detectmobilebrowser.js'); ?>
+=======
+>>>>>>> 4dfb0715459dc076dbec2412ab1b7f966db1b66d
     </head>
     <body>
         <?php shiftnav_toggle( 'shiftnav-main' , 'Toggle Menu' , array( 'icon' => 'bars' , 'class' => 'shiftnav-toggle-button') ); ?>
@@ -36,17 +39,19 @@
                         case 'certification-particulier':
                         case 'certification-professionnels':
                         case 'certification-ecole':
+                        case 'tarifs':
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline_blue.png' alt='Logotype Opquast' class='img-logo'>";
-                            break;
-                        case 'certification-2':
-                            echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline-1.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
                         case 'accueil':
                             echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline.png' alt='Logotype Opquast' class='img-logo'>";
                             break;
-                        /*case 'mini-test':
-                            echo ""
-                            https://florian-chretien.fr/opquast/wp-content/uploads/2018/06/logo_opquast_no-baseline_white.png*/
+                        case 'formations':
+                        case 'contact':
+                            echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline_red.png' alt='Logotype Opquast' class='img-logo'>";
+                            break;
+                        case 'check-lists':
+                            echo "<img src='".get_site_url()."/wp-content/uploads/2018/06/logo_opquast_no-baseline_green.png' alt='Logotype Opquast' class='img-logo'>";
+                            break;
                     }
                     ?>
                 </a>
