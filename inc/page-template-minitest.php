@@ -3,7 +3,10 @@
 -->
 <?php get_header('opquast'); ?>
 
-<?php echo do_shortcode('[wp_quiz id="20"]'); ?>
+<?php the_post(); ?>
+
+    <?php the_content(); ?>
+
 
 <?php get_footer('opquast'); ?>
 

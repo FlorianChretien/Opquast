@@ -171,7 +171,6 @@
       }
 
       .link-login {
-        display: none;
         order: 2;
       }
 
@@ -408,4 +407,8 @@
       }
     }
   }
+}
+
+.wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul{
+  padding-right: 65px;
 }

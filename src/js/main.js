@@ -1,5 +1,3 @@
-import WOW from 'wowjs';
-
 $(document).ready(function() {
   var video = $('#bg-video');
   var srcVideo = $("#bg-video").data("src");
@@ -33,7 +31,7 @@ $(document).ready(function() {
   }
 
 
-  new WOW.WOW().init();
+  new WOW().init();
 
 
   var button = $("#menu-btn");
@@ -70,5 +68,6 @@ $(document).ready(function() {
     $('html, body').animate({scrollTop: $('section#check-list').offset().top }, 800);
     return false;
   });
+
 });
 

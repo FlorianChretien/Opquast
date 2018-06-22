@@ -7,7 +7,7 @@
 <main class="wrap-contact">
     <div class="container">
         <section class="wrap-form">
-            <?php echo do_shortcode('[contact-form-7 id="99" title="Contactez-nous"]'); ?>
+            <?php echo do_shortcode('[contact-form-7 id="26" title="Contact 1"]'); ?>
         </section>
 
         <section class="wrap-map">

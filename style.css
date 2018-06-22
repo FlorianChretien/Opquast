@@ -796,7 +796,6 @@ img {
         .wrap-header .container .wrap-links .primary-nav div[class^="menu"] ul li a:hover:after, .wrap-header .container .wrap-links .primary-nav div[class^="menu"] ul li a:active:after, .wrap-header .container .wrap-links .primary-nav div[class^="menu"] ul li a:focus:after {
           width: 100%; }
     .wrap-header .container .wrap-links .link-login {
-      display: none;
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
               order: 2; }
@@ -1242,6 +1241,9 @@ img {
         max-width: 226px;
         margin-left: auto;
         font-size: 1.4rem; }
+
+.wrap-header .container .wrap-links .primary-nav div[class^="menu"] > ul {
+  padding-right: 65px; }
 
 header {
   color: #fff; }
